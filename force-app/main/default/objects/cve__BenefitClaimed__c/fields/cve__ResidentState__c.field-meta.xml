@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>cve__ResidentState__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <label>Resident State</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>AK-ALASKA</fullName>
+                <default>false</default>
+                <label>AK-ALASKA</label>
+            </value>
+            <value>
+                <fullName>AL-ALABAMA</fullName>
+                <default>false</default>
+                <label>AL-ALABAMA</label>
+            </value>
+            <value>
+                <fullName>AR-ARKANSAS</fullName>
+                <default>false</default>
+                <label>AR-ARKANSAS</label>
+            </value>
+            <value>
+                <fullName>AZ-ARIZONA</fullName>
+                <default>false</default>
+                <label>AZ-ARIZONA</label>
+            </value>
+            <value>
+                <fullName>CA-CALIFORNIA</fullName>
+                <default>false</default>
+                <label>CA-CALIFORNIA</label>
+            </value>
+            <value>
+                <fullName>CO-COLORADO</fullName>
+                <default>false</default>
+                <label>CO-COLORADO</label>
+            </value>
+            <value>
+                <fullName>CT-CONNECTICUT</fullName>
+                <default>false</default>
+                <label>CT-CONNECTICUT</label>
+            </value>
+            <value>
+                <fullName>DC-DISTRICT OF COLUMBIA</fullName>
+                <default>false</default>
+                <label>DC-DISTRICT OF COLUMBIA</label>
+            </value>
+            <value>
+                <fullName>DE-DELAWARE</fullName>
+                <default>false</default>
+                <label>DE-DELAWARE</label>
+            </value>
+            <value>
+                <fullName>FL-FLORIDA</fullName>
+                <default>false</default>
+                <label>FL-FLORIDA</label>
+            </value>
+            <value>
+                <fullName>GA-GEORGIA</fullName>
+                <default>false</default>
+                <label>GA-GEORGIA</label>
+            </value>
+            <value>
+                <fullName>HI-HAWAII</fullName>
+                <default>false</default>
+                <label>HI-HAWAII</label>
+            </value>
+            <value>
+                <fullName>IA-IOWA</fullName>
+                <default>false</default>
+                <label>IA-IOWA</label>
+            </value>
+            <value>
+                <fullName>ID-IDAHO</fullName>
+                <default>false</default>
+                <label>ID-IDAHO</label>
+            </value>
+            <value>
+                <fullName>IL-ILLINOIS</fullName>
+                <default>false</default>
+                <label>IL-ILLINOIS</label>
+            </value>
+            <value>
+                <fullName>IN-INDIANA</fullName>
+                <default>false</default>
+                <label>IN-INDIANA</label>
+            </value>
+            <value>
+                <fullName>KS-KANSAS</fullName>
+                <default>false</default>
+                <label>KS-KANSAS</label>
+            </value>
+            <value>
+                <fullName>KY-KENTUCKY</fullName>
+                <default>false</default>
+                <label>KY-KENTUCKY</label>
+            </value>
+            <value>
+                <fullName>LA-LOUISIANA</fullName>
+                <default>false</default>
+                <label>LA-LOUISIANA</label>
+            </value>
+            <value>
+                <fullName>MA-MASSACHUSETTS</fullName>
+                <default>false</default>
+                <label>MA-MASSACHUSETTS</label>
+            </value>
+            <value>
+                <fullName>MD-MARYLAND</fullName>
+                <default>false</default>
+                <label>MD-MARYLAND</label>
+            </value>
+            <value>
+                <fullName>ME-MAINE</fullName>
+                <default>false</default>
+                <label>ME-MAINE</label>
+            </value>
+            <value>
+                <fullName>MI-MICHIGAN</fullName>
+                <default>false</default>
+                <label>MI-MICHIGAN</label>
+            </value>
+            <value>
+                <fullName>MN-MINNESOTA</fullName>
+                <default>false</default>
+                <label>MN-MINNESOTA</label>
+            </value>
+            <value>
+                <fullName>MO-MISSOURI</fullName>
+                <default>false</default>
+                <label>MO-MISSOURI</label>
+            </value>
+            <value>
+                <fullName>MS-MISSISSIPPI</fullName>
+                <default>false</default>
+                <label>MS-MISSISSIPPI</label>
+            </value>
+            <value>
+                <fullName>MT-MONTANA</fullName>
+                <default>false</default>
+                <label>MT-MONTANA</label>
+            </value>
+            <value>
+                <fullName>NC-NORTH CAROLINA</fullName>
+                <default>false</default>
+                <label>NC-NORTH CAROLINA</label>
+            </value>
+            <value>
+                <fullName>ND-NORTH DAKOTA</fullName>
+                <default>false</default>
+                <label>ND-NORTH DAKOTA</label>
+            </value>
+            <value>
+                <fullName>NE-NEBRASKA</fullName>
+                <default>false</default>
+                <label>NE-NEBRASKA</label>
+            </value>
+            <value>
+                <fullName>NH-NEW HAMPSHIRE</fullName>
+                <default>false</default>
+                <label>NH-NEW HAMPSHIRE</label>
+            </value>
+            <value>
+                <fullName>NJ-NEW JERSEY</fullName>
+                <default>false</default>
+                <label>NJ-NEW JERSEY</label>
+            </value>
+            <value>
+                <fullName>NM-NEW MEXICO</fullName>
+                <default>false</default>
+                <label>NM-NEW MEXICO</label>
+            </value>
+            <value>
+                <fullName>NV-NEVADA</fullName>
+                <default>false</default>
+                <label>NV-NEVADA</label>
+            </value>
+            <value>
+                <fullName>NY-NEW YORK</fullName>
+                <default>false</default>
+                <label>NY-NEW YORK</label>
+            </value>
+            <value>
+                <fullName>OH-OHIO</fullName>
+                <default>false</default>
+                <label>OH-OHIO</label>
+            </value>
+            <value>
+                <fullName>OK-OKLAHOMA</fullName>
+                <default>false</default>
+                <label>OK-OKLAHOMA</label>
+            </value>
+            <value>
+                <fullName>OR-OREGON</fullName>
+                <default>false</default>
+                <label>OR-OREGON</label>
+            </value>
+            <value>
+                <fullName>PA-PENNSYLVANIA</fullName>
+                <default>false</default>
+                <label>PA-PENNSYLVANIA</label>
+            </value>
+            <value>
+                <fullName>RI-RHODE ISLAND</fullName>
+                <default>false</default>
+                <label>RI-RHODE ISLAND</label>
+            </value>
+            <value>
+                <fullName>SC-SOUTH CAROLINA</fullName>
+                <default>false</default>
+                <label>SC-SOUTH CAROLINA</label>
+            </value>
+            <value>
+                <fullName>SD-SOUTH DAKOTA</fullName>
+                <default>false</default>
+                <label>SD-SOUTH DAKOTA</label>
+            </value>
+            <value>
+                <fullName>TN-TENNESSEE</fullName>
+                <default>false</default>
+                <label>TN-TENNESSEE</label>
+            </value>
+            <value>
+                <fullName>TX-TEXAS</fullName>
+                <default>false</default>
+                <label>TX-TEXAS</label>
+            </value>
+            <value>
+                <fullName>UT-UTAH</fullName>
+                <default>false</default>
+                <label>UT-UTAH</label>
+            </value>
+            <value>
+                <fullName>VA-VIRGINIA</fullName>
+                <default>false</default>
+                <label>VA-VIRGINIA</label>
+            </value>
+            <value>
+                <fullName>VT-VERMONT</fullName>
+                <default>false</default>
+                <label>VT-VERMONT</label>
+            </value>
+            <value>
+                <fullName>WA-WASHINGTON</fullName>
+                <default>false</default>
+                <label>WA-WASHINGTON</label>
+            </value>
+            <value>
+                <fullName>WI-WISCONSIN</fullName>
+                <default>false</default>
+                <label>WI-WISCONSIN</label>
+            </value>
+            <value>
+                <fullName>WV-WEST VIRGINIA</fullName>
+                <default>false</default>
+                <label>WV-WEST VIRGINIA</label>
+            </value>
+            <value>
+                <fullName>WY-WYOMING</fullName>
+                <default>false</default>
+                <label>WY-WYOMING</label>
+            </value>
+            <value>
+                <fullName>AB-ALBERTA</fullName>
+                <default>false</default>
+                <label>AB-ALBERTA</label>
+            </value>
+            <value>
+                <fullName>AS-AMERICAN SAMOA</fullName>
+                <default>false</default>
+                <label>AS-AMERICAN SAMOA</label>
+            </value>
+            <value>
+                <fullName>BC-BRITISH COLUMBIA</fullName>
+                <default>false</default>
+                <label>BC-BRITISH COLUMBIA</label>
+            </value>
+            <value>
+                <fullName>CZ-CANAL ZONE</fullName>
+                <default>false</default>
+                <label>CZ-CANAL ZONE</label>
+            </value>
+            <value>
+                <fullName>FM-FEDERATED STATES OF MICRONESIA</fullName>
+                <default>false</default>
+                <label>FM-FEDERATED STATES OF MICRONESIA</label>
+            </value>
+            <value>
+                <fullName>GU-GUAM</fullName>
+                <default>false</default>
+                <label>GU-GUAM</label>
+            </value>
+            <value>
+                <fullName>HK-HONG KONG</fullName>
+                <default>false</default>
+                <label>HK-HONG KONG</label>
+            </value>
+            <value>
+                <fullName>KO-KOREA</fullName>
+                <default>false</default>
+                <label>KO-KOREA</label>
+            </value>
+            <value>
+                <fullName>LB-LABRADOR</fullName>
+                <default>false</default>
+                <label>LB-LABRADOR</label>
+            </value>
+            <value>
+                <fullName>MB-MANITOBA</fullName>
+                <default>false</default>
+                <label>MB-MANITOBA</label>
+            </value>
+            <value>
+                <fullName>MH-MARSHALL ISLANDS</fullName>
+                <default>false</default>
+                <label>MH-MARSHALL ISLANDS</label>
+            </value>
+            <value>
+                <fullName>MP-NORTHERN MARIANA ISLANDS</fullName>
+                <default>false</default>
+                <label>MP-NORTHERN MARIANA ISLANDS</label>
+            </value>
+            <value>
+                <fullName>NB-NEW BRUNSWICK</fullName>
+                <default>false</default>
+                <label>NB-NEW BRUNSWICK</label>
+            </value>
+            <value>
+                <fullName>NF-NEWFOUNDLAND</fullName>
+                <default>false</default>
+                <label>NF-NEWFOUNDLAND</label>
+            </value>
+            <value>
+                <fullName>NS-NOVA SCOTIA</fullName>
+                <default>false</default>
+                <label>NS-NOVA SCOTIA</label>
+            </value>
+            <value>
+                <fullName>NT-NORTHWEST TERRITORIES</fullName>
+                <default>false</default>
+                <label>NT-NORTHWEST TERRITORIES</label>
+            </value>
+            <value>
+                <fullName>ON-ONTARIO</fullName>
+                <default>false</default>
+                <label>ON-ONTARIO</label>
+            </value>
+            <value>
+                <fullName>PE-PRINCE EDWARD ISLAND</fullName>
+                <default>false</default>
+                <label>PE-PRINCE EDWARD ISLAND</label>
+            </value>
+            <value>
+                <fullName>PQ-QUEBEC</fullName>
+                <default>false</default>
+                <label>PQ-QUEBEC</label>
+            </value>
+            <value>
+                <fullName>PR-PUERTO RICO</fullName>
+                <default>false</default>
+                <label>PR-PUERTO RICO</label>
+            </value>
+            <value>
+                <fullName>PW-PALAU</fullName>
+                <default>false</default>
+                <label>PW-PALAU</label>
+            </value>
+            <value>
+                <fullName>SA-SAUDI ARABIA</fullName>
+                <default>false</default>
+                <label>SA-SAUDI ARABIA</label>
+            </value>
+            <value>
+                <fullName>SK-SASKATCHEWAN</fullName>
+                <default>false</default>
+                <label>SK-SASKATCHEWAN</label>
+            </value>
+            <value>
+                <fullName>VI-VIRGIN ISLANDS</fullName>
+                <default>false</default>
+                <label>VI-VIRGIN ISLANDS</label>
+            </value>
+            <value>
+                <fullName>YK-YUKON TERRITORIES</fullName>
+                <default>false</default>
+                <label>YK-YUKON TERRITORIES</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>cve__PolicyNames__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This will displays Policy names that are associated with Benefit Claimed of the Claim</description>
+    <externalId>false</externalId>
+    <label>Policy Names</label>
+    <length>255</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

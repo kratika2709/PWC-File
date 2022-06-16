@@ -1,0 +1,517 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LBC_Event_Type_Detail__c</fullName>
+    <externalId>false</externalId>
+    <label>LBC Event Type Detail</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>LBC_Event_Type__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Event Type Detail</fullName>
+                <default>false</default>
+                <label>Event Type Detail</label>
+            </value>
+            <value>
+                <fullName>Disability Benefits : Legacy</fullName>
+                <default>false</default>
+                <label>Disability Benefits : Legacy</label>
+            </value>
+            <value>
+                <fullName>Trauma : Legacy</fullName>
+                <default>false</default>
+                <label>Trauma : Legacy</label>
+            </value>
+            <value>
+                <fullName>Accident Benefits : Legacy</fullName>
+                <default>false</default>
+                <label>Accident Benefits : Legacy</label>
+            </value>
+            <value>
+                <fullName>Income Protector : Legacy</fullName>
+                <default>false</default>
+                <label>Income Protector : Legacy</label>
+            </value>
+            <value>
+                <fullName>Complaint : Legacy</fullName>
+                <default>false</default>
+                <label>Complaint : Legacy</label>
+            </value>
+            <value>
+                <fullName>WOP : Legacy</fullName>
+                <default>false</default>
+                <label>WOP : Legacy</label>
+            </value>
+            <value>
+                <fullName>Physical Impairment : Legacy</fullName>
+                <default>false</default>
+                <label>Physical Impairment : Legacy</label>
+            </value>
+            <value>
+                <fullName>Disability Benefits : Matrix</fullName>
+                <default>false</default>
+                <label>Disability Benefits : Matrix</label>
+            </value>
+            <value>
+                <fullName>Dread Disease : Matrix</fullName>
+                <default>false</default>
+                <label>Dread Disease : Matrix</label>
+            </value>
+            <value>
+                <fullName>Accident Benefits : Matrix</fullName>
+                <default>false</default>
+                <label>Accident Benefits : Matrix</label>
+            </value>
+            <value>
+                <fullName>Accident Income Benefits : Matrix</fullName>
+                <default>false</default>
+                <label>Accident Income Benefits : Matrix</label>
+            </value>
+            <value>
+                <fullName>Sickness Benefit</fullName>
+                <default>false</default>
+                <label>Sickness Benefit</label>
+            </value>
+            <value>
+                <fullName>Sickness Benefit: Child Protector</fullName>
+                <default>false</default>
+                <label>Sickness Benefit: Child Protector</label>
+            </value>
+            <value>
+                <fullName>Sickness Benefit: Spouse Protector</fullName>
+                <default>false</default>
+                <label>Sickness Benefit: Spouse Protector</label>
+            </value>
+            <value>
+                <fullName>Sickness Benefit: Hospital Protector</fullName>
+                <default>false</default>
+                <label>Sickness Benefit: Hospital Protector</label>
+            </value>
+            <value>
+                <fullName>Sickness Benefit: Impairment Income</fullName>
+                <default>false</default>
+                <label>Sickness Benefit: Impairment Income</label>
+            </value>
+            <value>
+                <fullName>Physical Impairment : Matrix</fullName>
+                <default>false</default>
+                <label>Physical Impairment : Matrix</label>
+            </value>
+            <value>
+                <fullName>Functional Impairment</fullName>
+                <default>false</default>
+                <label>Functional Impairment</label>
+            </value>
+            <value>
+                <fullName>Accidental Disability</fullName>
+                <default>false</default>
+                <label>Accidental Disability</label>
+            </value>
+            <value>
+                <fullName>Income Protector : Matrix</fullName>
+                <default>false</default>
+                <label>Income Protector : Matrix</label>
+            </value>
+            <value>
+                <fullName>Income Protector : Child Protector</fullName>
+                <default>false</default>
+                <label>Income Protector : Child Protector</label>
+            </value>
+            <value>
+                <fullName>Income Protector : Spouse Protector</fullName>
+                <default>false</default>
+                <label>Income Protector : Spouse Protector</label>
+            </value>
+            <value>
+                <fullName>Income Protector : Impairment Income</fullName>
+                <default>false</default>
+                <label>Income Protector : Impairment Income</label>
+            </value>
+            <value>
+                <fullName>Income Protector : Pre-Retirement</fullName>
+                <default>false</default>
+                <label>Income Protector : Pre-Retirement</label>
+            </value>
+            <value>
+                <fullName>Income Protector : Post-Retirement</fullName>
+                <default>false</default>
+                <label>Income Protector : Post-Retirement</label>
+            </value>
+            <value>
+                <fullName>Complaint : Matrix</fullName>
+                <default>false</default>
+                <label>Complaint : Matrix</label>
+            </value>
+            <value>
+                <fullName>WOP : Matrix</fullName>
+                <default>false</default>
+                <label>WOP : Matrix</label>
+            </value>
+            <value>
+                <fullName>Severe Illness Lump Sum</fullName>
+                <default>false</default>
+                <label>Severe Illness Lump Sum</label>
+            </value>
+            <value>
+                <fullName>Severe Illness Income</fullName>
+                <default>false</default>
+                <label>Severe Illness Income</label>
+            </value>
+            <value>
+                <fullName>Loss of Income</fullName>
+                <default>false</default>
+                <label>Loss of Income</label>
+            </value>
+            <value>
+                <fullName>Retrenchment</fullName>
+                <default>false</default>
+                <label>Retrenchment</label>
+            </value>
+            <value>
+                <fullName>Child Benefit</fullName>
+                <default>false</default>
+                <label>Child Benefit</label>
+            </value>
+            <value>
+                <fullName>Temporary Disability</fullName>
+                <default>false</default>
+                <label>Temporary Disability</label>
+            </value>
+            <value>
+                <fullName>Temporary Incapacity</fullName>
+                <default>false</default>
+                <label>Temporary Incapacity</label>
+            </value>
+            <value>
+                <fullName>Impairment</fullName>
+                <default>false</default>
+                <label>Impairment</label>
+            </value>
+            <value>
+                <fullName>Child Cover</fullName>
+                <default>false</default>
+                <label>Child Cover</label>
+            </value>
+            <value>
+                <fullName>Prosthetic Booster</fullName>
+                <default>false</default>
+                <label>Prosthetic Booster</label>
+            </value>
+            <value>
+                <fullName>Ill Health : Legacy</fullName>
+                <default>false</default>
+                <label>Ill Health : Legacy</label>
+            </value>
+            <value>
+                <fullName>Ill Health : Epsilon</fullName>
+                <default>false</default>
+                <label>Ill Health : Epsilon</label>
+            </value>
+            <value>
+                <fullName>Complaint : RA</fullName>
+                <default>false</default>
+                <label>Complaint : RA</label>
+            </value>
+            <value>
+                <fullName>Send Forms</fullName>
+                <default>false</default>
+                <label>Send Forms</label>
+            </value>
+            <value>
+                <fullName>Send Copy of Correspondence</fullName>
+                <default>false</default>
+                <label>Send Copy of Correspondence</label>
+            </value>
+            <value>
+                <fullName>Get Update on Outstanding Requirements</fullName>
+                <default>false</default>
+                <label>Get Update on Outstanding Requirements</label>
+            </value>
+            <value>
+                <fullName>General Claim Enquiry</fullName>
+                <default>false</default>
+                <label>General Claim Enquiry</label>
+            </value>
+            <value>
+                <fullName>General Claim Enquiry: Sickness</fullName>
+                <default>false</default>
+                <label>General Claim Enquiry: Sickness</label>
+            </value>
+            <value>
+                <fullName>LBC Change Client Details</fullName>
+                <default>false</default>
+                <label>LBC Change Client Details</label>
+            </value>
+            <value>
+                <fullName>LBC Recon</fullName>
+                <default>false</default>
+                <label>LBC Recon</label>
+            </value>
+            <value>
+                <fullName>Enquiry from Other Department</fullName>
+                <default>false</default>
+                <label>Enquiry from Other Department</label>
+            </value>
+            <value>
+                <fullName>No Plan Number</fullName>
+                <default>false</default>
+                <label>No Plan Number</label>
+            </value>
+            <value>
+                <fullName>Doctor Account Payment</fullName>
+                <default>false</default>
+                <label>Doctor Account Payment</label>
+            </value>
+            <value>
+                <fullName>Namibia Claims</fullName>
+                <default>false</default>
+                <label>Namibia Claims</label>
+            </value>
+            <value>
+                <fullName>Indiefin Claims</fullName>
+                <default>false</default>
+                <label>Indiefin Claims</label>
+            </value>
+            <value>
+                <fullName>Indiefin Complaint</fullName>
+                <default>false</default>
+                <label>Indiefin Complaint</label>
+            </value>
+            <value>
+                <fullName>ARL Claims</fullName>
+                <default>false</default>
+                <label>ARL Claims</label>
+            </value>
+            <value>
+                <fullName>ARL Complaint</fullName>
+                <default>false</default>
+                <label>ARL Complaint</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Legacy</controllingFieldValue>
+            <valueName>Disability Benefits : Legacy</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Legacy</controllingFieldValue>
+            <valueName>Trauma : Legacy</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Legacy</controllingFieldValue>
+            <valueName>Accident Benefits : Legacy</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Legacy</controllingFieldValue>
+            <valueName>Income Protector : Legacy</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Legacy</controllingFieldValue>
+            <valueName>Complaint : Legacy</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Legacy</controllingFieldValue>
+            <valueName>WOP : Legacy</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Legacy</controllingFieldValue>
+            <valueName>Physical Impairment : Legacy</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Matrix</controllingFieldValue>
+            <valueName>Disability Benefits : Matrix</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Matrix</controllingFieldValue>
+            <valueName>Dread Disease : Matrix</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Matrix</controllingFieldValue>
+            <valueName>Accident Benefits : Matrix</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Matrix</controllingFieldValue>
+            <valueName>Accident Income Benefits : Matrix</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Matrix</controllingFieldValue>
+            <valueName>Sickness Benefit</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Matrix</controllingFieldValue>
+            <valueName>Sickness Benefit: Child Protector</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Matrix</controllingFieldValue>
+            <valueName>Sickness Benefit: Spouse Protector</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Matrix</controllingFieldValue>
+            <valueName>Sickness Benefit: Hospital Protector</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Matrix</controllingFieldValue>
+            <valueName>Sickness Benefit: Impairment Income</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Matrix</controllingFieldValue>
+            <valueName>Physical Impairment : Matrix</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Matrix</controllingFieldValue>
+            <valueName>Functional Impairment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Matrix</controllingFieldValue>
+            <valueName>Accidental Disability</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Matrix</controllingFieldValue>
+            <valueName>Income Protector : Matrix</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Matrix</controllingFieldValue>
+            <valueName>Income Protector : Child Protector</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Matrix</controllingFieldValue>
+            <valueName>Income Protector : Spouse Protector</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Matrix</controllingFieldValue>
+            <valueName>Income Protector : Impairment Income</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Matrix</controllingFieldValue>
+            <valueName>Income Protector : Pre-Retirement</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Matrix</controllingFieldValue>
+            <valueName>Income Protector : Post-Retirement</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Matrix</controllingFieldValue>
+            <valueName>Complaint : Matrix</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Matrix</controllingFieldValue>
+            <valueName>WOP : Matrix</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Matrix</controllingFieldValue>
+            <valueName>Severe Illness Lump Sum</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Matrix</controllingFieldValue>
+            <valueName>Severe Illness Income</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Matrix</controllingFieldValue>
+            <valueName>Loss of Income</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Matrix</controllingFieldValue>
+            <valueName>Retrenchment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Matrix</controllingFieldValue>
+            <valueName>Child Benefit</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Matrix</controllingFieldValue>
+            <valueName>Temporary Disability</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Matrix</controllingFieldValue>
+            <valueName>Temporary Incapacity</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Matrix</controllingFieldValue>
+            <valueName>Impairment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Matrix</controllingFieldValue>
+            <valueName>Child Cover</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Matrix</controllingFieldValue>
+            <valueName>Prosthetic Booster</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>RA</controllingFieldValue>
+            <valueName>Ill Health : Legacy</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>RA</controllingFieldValue>
+            <valueName>Ill Health : Epsilon</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>RA</controllingFieldValue>
+            <valueName>Complaint : RA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>LBC - Claim (General)</controllingFieldValue>
+            <valueName>Send Forms</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>LBC - Claim (General)</controllingFieldValue>
+            <valueName>Send Copy of Correspondence</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>LBC - Claim (General)</controllingFieldValue>
+            <valueName>Get Update on Outstanding Requirements</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>LBC - Claim (General)</controllingFieldValue>
+            <valueName>General Claim Enquiry</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>LBC - Claim (General)</controllingFieldValue>
+            <valueName>General Claim Enquiry: Sickness</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>LBC - Claim (General)</controllingFieldValue>
+            <valueName>LBC Change Client Details</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>LBC - Claim (General)</controllingFieldValue>
+            <valueName>LBC Recon</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>LBC - Claim (General)</controllingFieldValue>
+            <valueName>Enquiry from Other Department</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>LBC - Claim (General)</controllingFieldValue>
+            <valueName>No Plan Number</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>LBC - Claim (General)</controllingFieldValue>
+            <valueName>Doctor Account Payment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Namibia - Claim</controllingFieldValue>
+            <valueName>Namibia Claims</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Indiefin</controllingFieldValue>
+            <valueName>Indiefin Claims</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Indiefin</controllingFieldValue>
+            <valueName>Indiefin Complaint</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>African Rainbow Life</controllingFieldValue>
+            <valueName>ARL Claims</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>African Rainbow Life</controllingFieldValue>
+            <valueName>ARL Complaint</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

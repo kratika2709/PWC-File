@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>cve__LookbackDaysUsedWithReduction__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Populated when Benefit has a lookback configured</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Subset number of days of paid payments which contained Applied Adjustments based on Benefit Reductions</inlineHelpText>
+    <label>Lookback Days Used at Reduced Benefit</label>
+    <precision>10</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

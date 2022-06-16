@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>No_HP_stay_end_not_required</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(OR(ISPICKVAL( Hospital_Status__c , &apos;No hospitalisation (No HP)&apos;),ISPICKVAL( Hospital_Status__c , &apos; &apos;)), NOT( ISBLANK( cve__HospitalEndDate__c )))</errorConditionFormula>
+    <errorDisplayField>cve__HospitalEndDate__c</errorDisplayField>
+    <errorMessage>No HP stay HP end date is not needed</errorMessage>
+</ValidationRule>

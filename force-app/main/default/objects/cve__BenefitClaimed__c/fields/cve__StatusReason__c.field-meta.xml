@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>cve__StatusReason__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <label>Status Reason</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>cve__Status__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Accelerated Payout</fullName>
+                <default>false</default>
+                <label>Accelerated Payout</label>
+            </value>
+            <value>
+                <fullName>AD&amp;D Loss</fullName>
+                <default>false</default>
+                <label>AD&amp;D Loss</label>
+            </value>
+            <value>
+                <fullName>ADB Death</fullName>
+                <default>false</default>
+                <label>ADB Death</label>
+            </value>
+            <value>
+                <fullName>ADL Loss</fullName>
+                <default>false</default>
+                <label>ADL Loss</label>
+            </value>
+            <value>
+                <fullName>Death</fullName>
+                <default>false</default>
+                <label>Death</label>
+            </value>
+            <value>
+                <fullName>Disabled Any Occupation</fullName>
+                <default>false</default>
+                <label>Disabled Any Occupation</label>
+            </value>
+            <value>
+                <fullName>Disabled Own Occupation</fullName>
+                <default>false</default>
+                <label>Disabled Own Occupation</label>
+            </value>
+            <value>
+                <fullName>Exception Authorized by Management</fullName>
+                <default>false</default>
+                <label>Exception Authorized by Management</label>
+            </value>
+            <value>
+                <fullName>Marked Up in Error</fullName>
+                <default>false</default>
+                <label>Marked Up in Error</label>
+            </value>
+            <value>
+                <fullName>Information Requested Not Received</fullName>
+                <default>false</default>
+                <label>Information Requested Not Received</label>
+            </value>
+            <value>
+                <fullName>Matured</fullName>
+                <default>false</default>
+                <label>Matured</label>
+            </value>
+            <value>
+                <fullName>Maximum Age</fullName>
+                <default>false</default>
+                <label>Maximum Age</label>
+            </value>
+            <value>
+                <fullName>Maximum Duration</fullName>
+                <default>false</default>
+                <label>Maximum Duration</label>
+            </value>
+            <value>
+                <fullName>Misrepresentation</fullName>
+                <default>false</default>
+                <label>Misrepresentation</label>
+            </value>
+            <value>
+                <fullName>Not an Accident Under the Terms of the Contract</fullName>
+                <default>false</default>
+                <label>Not an Accident Under the Terms of the Contract</label>
+            </value>
+            <value>
+                <fullName>Not Disabled Any Occupation</fullName>
+                <default>false</default>
+                <label>Not Disabled Any Occupation</label>
+            </value>
+            <value>
+                <fullName>Not Disabled Own Occupation</fullName>
+                <default>false</default>
+                <label>Not Disabled Own Occupation</label>
+            </value>
+            <value>
+                <fullName>Not Eligible</fullName>
+                <default>false</default>
+                <label>Not Eligible</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Policy Exclusion(s)</fullName>
+                <default>false</default>
+                <label>Policy Exclusion(s)</label>
+            </value>
+            <value>
+                <fullName>Pre-existing Condition</fullName>
+                <default>false</default>
+                <label>Pre-existing Condition</label>
+            </value>
+            <value>
+                <fullName>RTW Gainful Occupation</fullName>
+                <default>false</default>
+                <label>RTW Gainful Occupation</label>
+            </value>
+            <value>
+                <fullName>RTW Own Occupation</fullName>
+                <default>false</default>
+                <label>RTW Own Occupation</label>
+            </value>
+            <value>
+                <fullName>Settlement</fullName>
+                <default>false</default>
+                <label>Settlement</label>
+            </value>
+            <value>
+                <fullName>Suicide</fullName>
+                <default>false</default>
+                <label>Suicide</label>
+            </value>
+            <value>
+                <fullName>Terms of Contract Not Met</fullName>
+                <default>false</default>
+                <label>Terms of Contract Not Met</label>
+            </value>
+            <value>
+                <fullName>Unpaid Premium</fullName>
+                <default>false</default>
+                <label>Unpaid Premium</label>
+            </value>
+            <value>
+                <fullName>Withdrawn</fullName>
+                <default>false</default>
+                <label>Withdrawn</label>
+            </value>
+            <value>
+                <fullName>Deferred</fullName>
+                <default>false</default>
+                <label>Deferred</label>
+            </value>
+            <value>
+                <fullName>Reversal of finalised claim</fullName>
+                <default>false</default>
+                <label>Reversal of finalised claim</label>
+            </value>
+            <value>
+                <fullName>Duplicate</fullName>
+                <default>false</default>
+                <label>Duplicate</label>
+            </value>
+            <value>
+                <fullName>DC Unclaimed benefit</fullName>
+                <default>false</default>
+                <label>DC Unclaimed benefit</label>
+            </value>
+            <value>
+                <fullName>Not in force</fullName>
+                <default>false</default>
+                <label>Not in force</label>
+            </value>
+            <value>
+                <fullName>No benefit payable</fullName>
+                <default>false</default>
+                <label>No benefit payable</label>
+            </value>
+            <value>
+                <fullName>Refer to other department</fullName>
+                <default>false</default>
+                <label>Refer to other department</label>
+            </value>
+            <value>
+                <fullName>Refer to finalise</fullName>
+                <default>false</default>
+                <label>Refer to finalise</label>
+            </value>
+            <value>
+                <fullName>Paid - Ex-gratia</fullName>
+                <default>false</default>
+                <label>Paid - Ex-gratia</label>
+            </value>
+            <value>
+                <fullName>Paid - Permanent claim</fullName>
+                <default>false</default>
+                <label>Paid - Permanent claim</label>
+            </value>
+            <value>
+                <fullName>Paid</fullName>
+                <default>false</default>
+                <label>Paid</label>
+            </value>
+            <value>
+                <fullName>Partially paid - Contractual Stipulations</fullName>
+                <default>false</default>
+                <label>Partially paid - Contractual Stipulations</label>
+            </value>
+            <value>
+                <fullName>Partially paid - Non Disclosure without Loading</fullName>
+                <default>false</default>
+                <label>Partially paid - Non Disclosure without Loading</label>
+            </value>
+            <value>
+                <fullName>Partially paid - Non Disclosure with Loading</fullName>
+                <default>false</default>
+                <label>Partially paid - Non Disclosure with Loading</label>
+            </value>
+            <value>
+                <fullName>Partially paid - Ex-gratia Decision</fullName>
+                <default>false</default>
+                <label>Partially paid - Ex-gratia Decision</label>
+            </value>
+            <value>
+                <fullName>Partially paid - Outstanding requirements</fullName>
+                <default>false</default>
+                <label>Partially paid - Outstanding requirements</label>
+            </value>
+            <value>
+                <fullName>No Claim - LBC - Benefit doesn&apos;t exist</fullName>
+                <default>false</default>
+                <label>No Claim - LBC - Benefit doesn&apos;t exist</label>
+            </value>
+            <value>
+                <fullName>No Claim - LBC - Conditions not covered by benefits</fullName>
+                <default>false</default>
+                <label>No Claim - LBC - Conditions not covered by benefits</label>
+            </value>
+            <value>
+                <fullName>No Claim - DC - Date of death before contractual date</fullName>
+                <default>false</default>
+                <label>No Claim - DC - Date of death before contractual date</label>
+            </value>
+            <value>
+                <fullName>No Claim - DC - Accidental death benefit.  Natural cause of death</fullName>
+                <default>false</default>
+                <label>No Claim - DC - Accidental death benefit.  Natural cause of death</label>
+            </value>
+            <value>
+                <fullName>Repudiated - Non-disclosure/Deterioration in risk/Misrepresentation</fullName>
+                <default>false</default>
+                <label>Repudiated - Non-disclosure/Deterioration in risk/Misrepresentation</label>
+            </value>
+            <value>
+                <fullName>Repudiated - General exclusions</fullName>
+                <default>false</default>
+                <label>Repudiated - General exclusions</label>
+            </value>
+            <value>
+                <fullName>Repudiated - Specific underwriting exclusions</fullName>
+                <default>false</default>
+                <label>Repudiated - Specific underwriting exclusions</label>
+            </value>
+            <value>
+                <fullName>Repudiated - Benefit definition not met</fullName>
+                <default>false</default>
+                <label>Repudiated - Benefit definition not met</label>
+            </value>
+            <value>
+                <fullName>Repudiated - Declined as the waiting period has not yet expired</fullName>
+                <default>false</default>
+                <label>Repudiated - Declined as the waiting period has not yet expired</label>
+            </value>
+            <value>
+                <fullName>Repudiated - Policy lapsed</fullName>
+                <default>false</default>
+                <label>Repudiated - Policy lapsed</label>
+            </value>
+            <value>
+                <fullName>Repudiated - Premium position not in order</fullName>
+                <default>false</default>
+                <label>Repudiated - Premium position not in order</label>
+            </value>
+            <value>
+                <fullName>Repudiated - Cover not in force</fullName>
+                <default>false</default>
+                <label>Repudiated - Cover not in force</label>
+            </value>
+            <value>
+                <fullName>Repudiated - Misrepresentation</fullName>
+                <default>false</default>
+                <label>Repudiated - Misrepresentation</label>
+            </value>
+            <value>
+                <fullName>Repudiated - Suicide Exclusion</fullName>
+                <default>false</default>
+                <label>Repudiated - Suicide Exclusion</label>
+            </value>
+            <value>
+                <fullName>Repudiated - Fraud</fullName>
+                <default>false</default>
+                <label>Repudiated - Fraud</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Approved</controllingFieldValue>
+            <valueName>Paid - Ex-gratia</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Approved</controllingFieldValue>
+            <valueName>Paid - Permanent claim</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Approved</controllingFieldValue>
+            <valueName>Paid</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Approved</controllingFieldValue>
+            <valueName>Partially paid - Contractual Stipulations</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Approved</controllingFieldValue>
+            <valueName>Partially paid - Non Disclosure without Loading</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Approved</controllingFieldValue>
+            <valueName>Partially paid - Non Disclosure with Loading</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Approved</controllingFieldValue>
+            <valueName>Partially paid - Ex-gratia Decision</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Approved</controllingFieldValue>
+            <valueName>Partially paid - Outstanding requirements</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Denied</controllingFieldValue>
+            <valueName>No Claim - LBC - Benefit doesn&apos;t exist</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Denied</controllingFieldValue>
+            <valueName>No Claim - LBC - Conditions not covered by benefits</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Denied</controllingFieldValue>
+            <valueName>No Claim - DC - Date of death before contractual date</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Denied</controllingFieldValue>
+            <valueName>No Claim - DC - Accidental death benefit.  Natural cause of death</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Denied</controllingFieldValue>
+            <valueName>Repudiated - Non-disclosure/Deterioration in risk/Misrepresentation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Denied</controllingFieldValue>
+            <valueName>Repudiated - General exclusions</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Denied</controllingFieldValue>
+            <valueName>Repudiated - Specific underwriting exclusions</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Denied</controllingFieldValue>
+            <valueName>Repudiated - Benefit definition not met</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Denied</controllingFieldValue>
+            <valueName>Repudiated - Declined as the waiting period has not yet expired</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Denied</controllingFieldValue>
+            <valueName>Repudiated - Policy lapsed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Denied</controllingFieldValue>
+            <valueName>Repudiated - Premium position not in order</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Denied</controllingFieldValue>
+            <valueName>Repudiated - Cover not in force</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Denied</controllingFieldValue>
+            <valueName>Repudiated - Misrepresentation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Denied</controllingFieldValue>
+            <valueName>Repudiated - Suicide Exclusion</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Denied</controllingFieldValue>
+            <valueName>Repudiated - Fraud</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed</controllingFieldValue>
+            <valueName>Marked Up in Error</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed</controllingFieldValue>
+            <valueName>Information Requested Not Received</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed</controllingFieldValue>
+            <valueName>Deferred</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed</controllingFieldValue>
+            <valueName>Reversal of finalised claim</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed</controllingFieldValue>
+            <valueName>Duplicate</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed</controllingFieldValue>
+            <valueName>DC Unclaimed benefit</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed</controllingFieldValue>
+            <valueName>Not in force</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed</controllingFieldValue>
+            <valueName>No benefit payable</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed</controllingFieldValue>
+            <valueName>Refer to other department</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed</controllingFieldValue>
+            <valueName>Refer to finalise</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

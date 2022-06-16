@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>cve__CauseOfAccident__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <label>Cause of Accident</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Catastrophic</fullName>
+                <default>false</default>
+                <label>Catastrophic</label>
+            </value>
+            <value>
+                <fullName>Drowning</fullName>
+                <default>false</default>
+                <label>Drowning</label>
+            </value>
+            <value>
+                <fullName>Fall</fullName>
+                <default>false</default>
+                <label>Fall</label>
+            </value>
+            <value>
+                <fullName>Firearm</fullName>
+                <default>false</default>
+                <label>Firearm</label>
+            </value>
+            <value>
+                <fullName>Fire or Explosion</fullName>
+                <default>false</default>
+                <label>Fire or Explosion</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Other Accident</fullName>
+                <default>false</default>
+                <label>Other Accident</label>
+            </value>
+            <value>
+                <fullName>Vehicular Accident</fullName>
+                <default>false</default>
+                <label>Vehicular Accident</label>
+            </value>
+            <value>
+                <fullName>Vehicular Accident - Driver of Car</fullName>
+                <default>false</default>
+                <label>Vehicular Accident - Driver of Car</label>
+            </value>
+            <value>
+                <fullName>Vehicular Accident - Passenger of Car</fullName>
+                <default>false</default>
+                <label>Vehicular Accident - Passenger of Car</label>
+            </value>
+            <value>
+                <fullName>Workplace Accident</fullName>
+                <default>false</default>
+                <label>Workplace Accident</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>cve__SendInquiryPortalEmail</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <linkType>url</linkType>
+    <masterLabel>Send Inquiry Portal Email</masterLabel>
+    <openType>replace</openType>
+    <protected>false</protected>
+    <url>{! URLFOR( &quot;/apex/cve__Weblink&quot;) }?operation=SiteClaimInquiryActions.addressConfirmation&amp;operation2=SiteClaimInquiryActions.sendInquiryEmail&amp;params={%22claimId%22:%22{!cve__Claim__c.Id}%22}&amp;retURL={!cve__Claim__c.Id}</url>
+</WebLink>

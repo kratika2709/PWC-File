@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>cve__MannerOfDeath__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <label>Manner of Death</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Natural</fullName>
+                <default>false</default>
+                <label>Natural</label>
+            </value>
+            <value>
+                <fullName>Suicide</fullName>
+                <default>false</default>
+                <label>Suicide</label>
+            </value>
+            <value>
+                <fullName>Accident</fullName>
+                <default>false</default>
+                <label>Accident</label>
+            </value>
+            <value>
+                <fullName>Homicide</fullName>
+                <default>false</default>
+                <label>Homicide</label>
+            </value>
+            <value>
+                <fullName>Unknown/Undetermined</fullName>
+                <default>false</default>
+                <label>Unknown/Undetermined</label>
+            </value>
+            <value>
+                <fullName>Under Investigation</fullName>
+                <default>false</default>
+                <label>Under Investigation</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

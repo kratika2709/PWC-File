@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>cve__TotalToBeIncurredNet__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <inlineHelpText>Net total value of all un-paid payments that have been calculated or manually added. Or the difference between &quot;Total Liability Net&quot; and &quot;Total Incurred Net&quot;.</inlineHelpText>
+    <label>Total to be Incurred Net</label>
+    <precision>14</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

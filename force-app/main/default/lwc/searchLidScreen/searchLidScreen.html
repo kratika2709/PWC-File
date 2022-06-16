@@ -1,0 +1,558 @@
+<template>
+    <template if:true={isLoaded}>
+        <div class="slds-is-relative">
+            <lightning-spinner alternative-text="Loading" class="spinnerMediumHeight" variant="brand" size="large">
+            </lightning-spinner>
+        </div>
+    </template>
+    <lightning-card variant="Narrow">
+        <div class="slds-media__body section slds-text-heading_small slds-p-around_xx-small slds-m-around_x-small">
+            <h2 class="slds-card__header-title">
+                <span>
+                    <lightning-icon icon-name="standard:search" alternative-text="Audio file" title="Audio">
+                    </lightning-icon>
+                </span>
+                <span class="slds-p-around_x-small">Party Search</span>
+            </h2>
+        </div>
+        <lightning-layout vertical-align="start" multiple-rows="true">
+            <lightning-layout-item size="2" padding="around-small">
+
+                <input type="radio" name="age" value="Person" onchange={handleChange} />
+                <label for="Individual" class="slds-p-left_xx-small position">Person</label>
+            </lightning-layout-item>
+            <lightning-layout-item size="2" padding="around-small">
+                <input type="radio" name="age" value="LegalEntity" onchange={handleChange} />
+                <label for="Individual" class="slds-p-left_xx-small position">Legal Entity</label>
+
+            </lightning-layout-item>
+            <lightning-layout-item size="8" padding="around-small">
+            </lightning-layout-item>
+            <lightning-layout-item size="2" padding="around-small">
+                <input type="radio" name="age" value="Intermediary" onchange={handleChange} />
+                <label for="Individual" class="slds-p-left_xx-small position">Intermediary</label>
+
+            </lightning-layout-item>
+            <lightning-layout-item size="2" padding="around-small">
+                <input type="radio" name="age" value="Policy" onchange={handleChange} />
+                <label for="Individual" class="slds-p-left_xx-small position">Policy</label>
+            </lightning-layout-item>
+        </lightning-layout>
+        <lightning-layout vertical-align="start" multiple-rows="true">
+            <lightning-layout-item size="12" class="slds-p-left_small">
+                <lightning-input type="checkbox" label="Search Externally only" name="input1"
+                    onchange={handleSearchtype}>
+                </lightning-input>
+                <hr>
+            </lightning-layout-item>
+        </lightning-layout>
+        <template if:true={firstLast}>
+            <lightning-layout vertical-align="start">
+                <lightning-layout-item size="2" padding="around-small">
+                    First Name <template if:true={showRequriedFirstName}>
+                        <abbr class="slds-required  ">* </abbr>
+                    </template>
+                </lightning-layout-item>
+                <lightning-layout-item size="4" padding="around-small">
+                    <lightning-input type="text" class="firstNameCmp" name="Number" variant="label-hidden"
+                        data-name="name">
+                    </lightning-input>
+                </lightning-layout-item>
+            </lightning-layout>
+            <lightning-layout vertical-align="start">
+                <lightning-layout-item size="2" padding="around-small">
+                    Last Name <template if:true={showRequriedLastName}>
+                        <abbr class="slds-required ">* </abbr>
+                    </template>
+                </lightning-layout-item>
+                <lightning-layout-item size="4" padding="around-small">
+                    <lightning-input type="text" class="lastNameCmp" name="Number" variant="label-hidden"
+                        data-name="surname">
+                    </lightning-input>
+                </lightning-layout-item>
+            </lightning-layout>
+        </template>
+
+        <template if:true={isIndividual}>
+            <lightning-layout vertical-align="start">
+                <lightning-layout-item size="2" padding="around-small">
+                    DOB:
+                </lightning-layout-item>
+                <lightning-layout-item size="4" padding="around-small">
+                    <lightning-input type="Date" name="Number" variant="label-hidden" data-name="birth_date">
+                    </lightning-input>
+                </lightning-layout-item>
+            </lightning-layout>
+            <lightning-layout vertical-align="start">
+                <lightning-layout-item size="2" padding="around-small">
+                    Phone:
+                </lightning-layout-item>
+                <lightning-layout-item size="4" padding="around-small">
+                    <lightning-input type="tel" name="phone" class="validate" variant="label-hidden"
+                        pattern="[0-9]{5}[0-9]{5}$" message-when-pattern-mismatch="Please enter a valid phone number"
+                        data-name="phone_details">
+                    </lightning-input>
+                </lightning-layout-item>
+            </lightning-layout>
+            <lightning-layout vertical-align="start">
+                <lightning-layout-item size="2" padding="around-small">
+                    Email:
+                </lightning-layout-item>
+                <lightning-layout-item size="4" padding="around-small">
+                    <lightning-input type="email" name="Number" variant="label-hidden" data-name="email_address">
+                    </lightning-input>
+                </lightning-layout-item>
+            </lightning-layout>
+
+            <div class="section slds-text-heading_small slds-p-around_xx-small slds-m-around_x-small">Identification
+            </div>
+            <lightning-layout vertical-align="center">
+                <lightning-layout-item size="2" padding="around-small">
+                    Identification type:
+                </lightning-layout-item>
+                <lightning-layout-item size="4" padding="around-small">
+                    <lightning-combobox name="progress" value={regisType} placeholder="select" options={options}
+                        onchange={handleTypeChange}>
+                    </lightning-combobox>
+                </lightning-layout-item>
+            </lightning-layout>
+
+            <lightning-layout vertical-align="start">
+                <lightning-layout-item size="2" padding="around-small">
+                    Identification Number
+                </lightning-layout-item>
+                <lightning-layout-item size="4" padding="around-small">
+                    <lightning-input if:true={pattern} type="text" name="Number" variant="label-hidden"
+                        class="registrationnumberCmp" onchange={valdationchangecheck} data-name="registration_number">
+                    </lightning-input>
+                    <lightning-input if:false={pattern} type="text" name="Number" variant="label-hidden"
+                        class="registrationnumberCmp" onchange={valdationchangecheck} data-name="registration_number">
+                    </lightning-input>
+                </lightning-layout-item>
+            </lightning-layout>
+            <lightning-layout vertical-align="start">
+                <lightning-layout-item size="2" padding="around-small">
+                    Member Number:
+                </lightning-layout-item>
+                <lightning-layout-item size="4" padding="around-small">
+                    <lightning-input type="text" name="Number" variant="label-hidden" class="clientnumberCmp"
+                        onchange={valdationchangecheck} data-name="client_number">
+                    </lightning-input>
+                </lightning-layout-item>
+            </lightning-layout>
+            <lightning-layout vertical-align="start">
+                <lightning-layout-item size="2" padding="around-small">
+                    Plan Number:
+                </lightning-layout-item>
+                <lightning-layout-item size="4" padding="around-small">
+                    <lightning-input type="text" name="Number" min-length="10"
+                        message-when-too-short="Your Plan Number must be more 10 characters." variant="label-hidden"
+                        class="plannumberCmp" onchange={valdationchangecheck} data-name="plan_number">
+                    </lightning-input>
+                </lightning-layout-item>
+            </lightning-layout>
+        </template>
+
+        <template if:true={isIntermidiary}>
+            <lightning-layout vertical-align="start">
+                <lightning-layout-item size="2" padding="around-small">
+                    Intermediary Number:
+                </lightning-layout-item>
+                <lightning-layout-item size="4" padding="around-small">
+                    <lightning-input type="text" name="Number" variant="label-hidden" data-name="IntermediaryNumber">
+                    </lightning-input>
+                </lightning-layout-item>
+            </lightning-layout>
+
+        </template>
+        <template if:true={isPolicy}>
+            <lightning-layout vertical-align="start">
+                <lightning-layout-item size="2" padding="around-small">
+                    Plan Number:
+                </lightning-layout-item>
+                <lightning-layout-item size="4" padding="around-small">
+                    <lightning-input type="text" name="Number" min-length="10"
+                        message-when-too-short="Your Plan Number must be more 10 characters." variant="label-hidden"
+                        data-name="PolicyNumber">
+                    </lightning-input>
+                </lightning-layout-item>
+            </lightning-layout>
+        </template>
+        <template if:true={isLegalEntity}>
+            <lightning-layout vertical-align="start">
+                <lightning-layout-item size="2" padding="around-small">
+                    Organisation Name:
+                </lightning-layout-item>
+                <lightning-layout-item size="4" padding="around-small">
+                    <lightning-input type="text" name="Number" maxlength="60"
+                        message-when-too-long="Your  Organisation Name must not be more than 60 characters."
+                        variant="label-hidden" data-name="organisation_name">
+                    </lightning-input>
+                </lightning-layout-item>
+            </lightning-layout>
+            <lightning-layout vertical-align="start">
+                <lightning-layout-item size="2" padding="around-small">
+                    Registration Number<lightning-helptext
+                        content="Please enter 'Registration Number' as XXXX/XXXXXX/XX" class="position">
+                    </lightning-helptext>:
+                </lightning-layout-item>
+                <lightning-layout-item size="4" padding="around-small">
+                    <lightning-input type="text" name="Number" class="RegistrationNumberCmp" variant="label-hidden"
+                        data-name="registration_number" pattern="[0-9]{4}/[0-9]{6}/[0-9]{2}$"
+                        message-when-pattern-mismatch="Please enter a valid Registration number"
+                        onchange={valdationchange}>
+                    </lightning-input>
+                </lightning-layout-item>
+            </lightning-layout>
+            <lightning-layout vertical-align="start">
+                <lightning-layout-item size="2" padding="around-small">
+                    Member Number:
+                </lightning-layout-item>
+                <lightning-layout-item size="4" padding="around-small">
+                    <lightning-input type="text" name="Number" class="MemberNumberCmp" variant="label-hidden"
+                        data-name="member_number" onchange={valdationchange}>
+                    </lightning-input>
+                </lightning-layout-item>
+            </lightning-layout>
+        </template>
+        <template if:true={radioVal}>
+            <lightning-layout-item size="3" padding="around-small">
+                <lightning-button variant="brand" label="Search" title="Primary action" onclick={handleClick}>
+                </lightning-button>
+            </lightning-layout-item>
+        </template>
+        <br />
+        <template if:true={showTable}>
+            <lightning-layout-item size="12" padding="around-small">
+                <lightning-datatable key-field="id" data={data} columns={columns} max-row-selection="1"
+                    onrowselection={selectedRowHandler}>
+                </lightning-datatable>
+            </lightning-layout-item>
+            <br>
+            <lightning-layout-item size="3" padding="around-small">
+                <lightning-button variant="brand" label="Select" title="Primary action" onclick={handle}>
+                </lightning-button>
+                <lightning-button variant="brand" label="Create Member Portfolio" title="Create Member Portfolio"
+                    style="margin-left:10px" onclick={createAccount}>
+                </lightning-button>
+            </lightning-layout-item>
+        </template>
+        <template if:true={showCustom}>
+            <lightning-layout-item size="12" padding="around-small">
+                <table class="slds-table slds-table_cell-buffer slds-table_bordered slds-table_col-bordered">
+                    <thead>
+                        <tr>
+                            <th class="bg-color">
+
+                            </th>
+                            <th class="bg-color">
+                                Last Name
+                            </th>
+                            <th class="bg-color">
+                                First Name
+                            </th>
+                            <th class="bg-color">
+                                DOB
+                            </th>
+                            <th class="bg-color">
+                                ID Number
+                            </th>
+                            <th class="bg-color">
+                                Country Of Issue
+                            </th>
+                            <th class="bg-color">
+                                Member Number
+                            </th>
+                            <th class="bg-color">
+                                Policy Number
+                            </th>
+                            <th class="bg-color">
+                                Intermediary Number
+                            </th>
+                            <th class="bg-color">
+                                TelePhone
+                            </th>
+                            <th class="bg-color">
+                                Email
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <template if:true={apiResult}>
+                            <template for:each={apiResult.ClientIdentifications} for:item="result">
+                                <tr key={result.clientNumber}>
+                                    <td>
+                                        <input type="radio" name="age" value="input"
+                                            data-lastname={result.personName.surname}
+                                            data-firstname={result.personName.preferredName} data-dob={result.birthDate}
+                                            data-idnumber={result.rsaIdNumber}
+                                            data-countryofissue={result.citizenshipDescription}
+                                            data-membernumber={result.clientNumber} data-policynumber={result.null}
+                                            data-intermediarynumber={result.jockeyCode} data-telephone={result.null}
+                                            data-email={result.null} onchange={handleChangerecord} />
+                                    </td>
+                                    <td>
+                                        {result.personName.surname}
+                                    </td>
+                                    <td>
+                                        {result.personName.preferredName}
+                                    </td>
+                                    <td>
+                                        {result.birthDate}
+                                    </td>
+                                    <td>
+                                        {result.rsaIdNumber}
+                                    </td>
+                                    <td>
+                                        {result.citizenshipDescription}
+                                    </td>
+                                    <td>
+                                        {result.clientNumber}
+                                    </td>
+                                    <td>
+                                        {result.PolicyNumber}
+                                    </td>
+                                    <td>
+                                        {result.jockeyCode}
+                                    </td>
+                                    <td>
+                                        null
+                                    </td>
+                                    <td>
+                                        null
+                                    </td>
+                                </tr>
+                            </template>
+                        </template>
+                    </tbody>
+                </table>
+                <br>
+                <lightning-layout-item size="3" padding="around-small">
+                    <lightning-button variant="brand" label="Select" title="Primary action" onclick={handle}>
+                    </lightning-button>
+                    <lightning-button variant="brand" label="Create Member Portfolio" title="Create Member Portfolio"
+                        style="margin-left:10px" onclick={createAccount}>
+                    </lightning-button>
+                </lightning-layout-item>
+            </lightning-layout-item>
+        </template>
+        <template if:true={showLegalEntity}>
+            <lightning-layout-item size="12" padding="around-small">
+                <table class="slds-table slds-table_cell-buffer slds-table_bordered slds-table_col-bordered">
+                    <thead>
+                        <tr>
+                            <th class="bg-color">
+
+                            </th>
+                            <th class="bg-color">
+                                Organisation Number
+                            </th>
+                            <th class="bg-color">
+                                Organisation Name
+                            </th>
+                            <th class="bg-color">
+                                Contact Person
+                            </th>
+                            <th class="bg-color">
+                                Organisation Type Description
+                            </th>
+                            <th class="bg-color">
+                                Registration Number
+                            </th>
+                            <th class="bg-color">
+                                Jockey Code
+                            </th>
+                            <th class="bg-color">
+                                Organisation Status
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <template if:true={apiResult}>
+                            <template
+                                for:each={apiResult.OrganisationIdentificationList.OrganisationIdentificationDetails}
+                                for:item="result">
+                                <tr key={result.organisationNumber}>
+                                    <td>
+                                        <input type="radio" name="age" value="input"
+                                            data-lastname={result.organisationName}
+                                            data-idnumber={result.organisationNumber}
+                                            data-membernumber={result.registrationNumber}
+                                            data-intermediarynumber={result.jockeyCode} onchange={handleLegalEntity} />
+                                    </td>
+                                    <td>
+                                        {result.organisationNumber}
+                                    </td>
+                                    <td>
+                                        {result.organisationName}
+                                    </td>
+                                    <td>
+                                        {result.contactPerson}
+                                    </td>
+                                    <td>
+                                        {result.organisationTypeDescription}
+                                    </td>
+                                    <td>
+                                        {result.registrationNumber}
+                                    </td>
+                                    <td>
+                                        {result.jockeyCode}
+                                    </td>
+                                    <td>
+                                        {result.organisationStatus}
+                                    </td>
+                                </tr>
+                            </template>
+                        </template>
+                    </tbody>
+                </table>
+                <br>
+                <lightning-layout-item size="3" padding="around-small">
+                    <lightning-button variant="brand" label="Select" title="Primary action" onclick={handle}>
+                    </lightning-button>
+                </lightning-layout-item>
+            </lightning-layout-item>
+        </template>
+        <template if:true={showPlantable}>
+            <lightning-layout-item size="12" padding="around-small">
+                <table class="slds-table slds-table_cell-buffer slds-table_bordered slds-table_col-bordered">
+                    <thead>
+                        <tr>
+                            <th class="bg-color">
+
+                            </th>
+                            <th class="bg-color">
+                                Policy Number
+                            </th>
+                            <th class="bg-color">
+                                Policy Description
+                            </th>
+                            <th class="bg-color">
+                                Full Name
+                            </th>
+                            <th class="bg-color">
+                                Member Number
+                            </th>
+                            <th class="bg-color">
+                                Birth date
+                            </th>
+                            <!-- <th class="bg-color">
+                                ID Number
+                            </th>
+                            <th class="bg-color">
+                                Country Of Issue
+                            </th> -->
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <template if:true={apiResult}>
+                            <template for:each={apiResult} for:item="result">
+                                <tr key={result.policyNumber}>
+                                    <td>
+                                        <input type="radio" name="age" value="input" data-name={result.fullName}
+                                            data-idnumber={result.idNumber} data-countryofissue={result.countryOfIssue}
+                                            data-membernumber={result.memberId} data-policynumber={result.policyNumber}
+                                            onchange={handlePlanSelect} />
+                                    </td>
+                                    <td>
+                                        {result.policyNumber}
+                                    </td>
+                                    <td>
+                                        {result.policyDescription}
+                                    </td>
+                                    <td>
+                                        {result.fullName}
+                                    </td>
+                                    <td>
+                                        {result.memberId}
+                                    </td>
+                                    <td>
+                                        {result.birthdate}
+                                    </td>
+                                    <!-- <td>
+                                        {result.idNumber}
+                                    </td>
+                                    <td>
+                                        {result.countryOfIssue}
+                                    </td> -->
+                                </tr>
+                            </template>
+                        </template>
+                    </tbody>
+                </table>
+                <br>
+                <lightning-layout-item size="3" padding="around-small">
+                    <lightning-button variant="brand" label="Select" title="Primary action" onclick={handle}>
+                    </lightning-button>
+                </lightning-layout-item>
+            </lightning-layout-item>
+        </template>
+
+
+        <template if:true={showIntermediary}>
+            <lightning-layout-item size="12" padding="around-small">
+                <table class="slds-table slds-table_cell-buffer slds-table_bordered slds-table_col-bordered">
+                    <thead>
+                        <tr>
+                            <th class="bg-color">
+
+                            </th>
+                            <th class="bg-color">
+                                First Name
+                            </th>
+                            <th class="bg-color">
+                                SurName
+                            </th>
+                            <th class="bg-color">
+                                Intermediary Code
+                            </th>
+                            <th class="bg-color">
+                                Region Name
+                            </th>
+                            <th class="bg-color">
+                                Email Address
+                            </th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <template if:true={apiResult.intermediaryList}>
+                            <template for:each={apiResult.intermediaryList} for:item="result">
+                                <tr key={result.personName.firstName}>
+                                    <td>
+                                        <input type="radio" name="age" value="input"
+                                            data-first-name={result.personName.firstName}
+                                            data-surname={result.personName.surname}
+                                            data-intermediary-code={result.intermediaryCode}
+                                            data-region-name={result.regionName}
+                                            data-email-address={result.emailAddress} />
+                                    </td>
+                                    <td>
+                                        {result.personName.firstName}
+                                    </td>
+                                    <td>
+                                        {result.personName.surname}
+                                    </td>
+                                    <td>
+                                        {result.intermediaryCode}
+                                    </td>
+                                    <td>
+                                        {result.regionName}
+                                    </td>
+                                    <td>
+                                        {result.emailAddress}
+                                    </td>
+                                </tr>
+                            </template>
+                        </template>
+                    </tbody>
+                </table>
+                <br>
+                <lightning-layout-item size="3" padding="around-small">
+                    <lightning-button variant="brand" label="Select" title="Primary action" onclick={handle}>
+                    </lightning-button>
+                </lightning-layout-item>
+            </lightning-layout-item>
+        </template>
+    </lightning-card>
+</template>

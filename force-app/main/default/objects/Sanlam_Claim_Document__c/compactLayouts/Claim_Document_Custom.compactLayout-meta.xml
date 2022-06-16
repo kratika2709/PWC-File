@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Claim_Document_Custom</fullName>
+    <fields>Name</fields>
+    <fields>Benefit_Claimed__c</fields>
+    <fields>Sanlam_Member_ID__c</fields>
+    <fields>Claims_Channel__c</fields>
+    <fields>Contact_History_Unique_ID__c</fields>
+    <fields>Document_ID__c</fields>
+    <label>Claim Document Custom</label>
+</CompactLayout>

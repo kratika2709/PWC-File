@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>cve__TotalBenefitAmount__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Total of Benefit Amounts from Approved Benefits Claimed</description>
+    <externalId>false</externalId>
+    <label>Total Approved Benefit Amount</label>
+    <summarizedField>cve__BenefitClaimed__c.cve__BenefitAmount__c</summarizedField>
+    <summaryFilterItems>
+        <field>cve__BenefitClaimed__c.cve__Status__c</field>
+        <operation>equals</operation>
+        <value>Approved</value>
+    </summaryFilterItems>
+    <summaryForeignKey>cve__BenefitClaimed__c.cve__Claim__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>cve__DefinitionOfDisabilityChange__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <formula>CASE(cve__Benefit__r.cve__DefinitionOfDisabilityUnits__c,
+        &quot;Days&quot;,  cve__ActualBenefitStart__c + cve__Benefit__r.cve__DefinitionOfDisabilityPeriod__c,
+        &quot;Weeks&quot;, cve__ActualBenefitStart__c + cve__Benefit__r.cve__DefinitionOfDisabilityPeriod__c * 7,
+        &quot;Years&quot;, IF( /* If the source date is the 2/29 and the Disability Change year is not a leap year, set to 3/1 */
+          AND(
+            MONTH(cve__ActualBenefitStart__c) == 2,
+            DAY(cve__ActualBenefitStart__c) == 29,
+            NOT(
+              OR( /* This OR returns true if the Disability Change year is a leap year */
+                MOD(YEAR(cve__ActualBenefitStart__c) + cve__Benefit__r.cve__DefinitionOfDisabilityPeriod__c, 400) == 0,
+                AND(
+                  MOD(YEAR(cve__ActualBenefitStart__c) + cve__Benefit__r.cve__DefinitionOfDisabilityPeriod__c, 100) != 0,
+                  MOD(YEAR(cve__ActualBenefitStart__c) + cve__Benefit__r.cve__DefinitionOfDisabilityPeriod__c, 4) == 0
+                )
+              )
+            )
+          ),
+          DATE(
+            YEAR(cve__ActualBenefitStart__c) + cve__Benefit__r.cve__DefinitionOfDisabilityPeriod__c,
+            3,
+            1
+          ),
+          DATE(
+            YEAR(cve__ActualBenefitStart__c) + cve__Benefit__r.cve__DefinitionOfDisabilityPeriod__c,
+            MONTH(cve__ActualBenefitStart__c),
+            DAY(cve__ActualBenefitStart__c)
+          )
+        ),
+        &quot;Months&quot;, IF(
+          DAY(ADDMONTHS(cve__ActualBenefitStart__c, cve__Benefit__r.cve__DefinitionOfDisabilityPeriod__c))
+          = DAY(cve__ActualBenefitStart__c),
+          ADDMONTHS(cve__ActualBenefitStart__c, cve__Benefit__r.cve__DefinitionOfDisabilityPeriod__c),
+          ADDMONTHS(cve__ActualBenefitStart__c, cve__Benefit__r.cve__DefinitionOfDisabilityPeriod__c) + 1
+        ),
+        /* When else */ cve__ActualBenefitStart__c + cve__Benefit__r.cve__DefinitionOfDisabilityPeriod__c
+      )</formula>
+    <label>Definition of Disability Change</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

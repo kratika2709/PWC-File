@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>cve__CalculateEntitlements</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <linkType>url</linkType>
+    <masterLabel>Calculate Payments</masterLabel>
+    <openType>replace</openType>
+    <protected>false</protected>
+    <url>{! URLFOR( &quot;/apex/cve__Weblink&quot;) }?operation=Beneficiaries.calculatePayableAmounts&amp;params={%22bcId%22:%22{!cve__BenefitClaimed__c.Id}%22}&amp;retURL={!cve__BenefitClaimed__c.Id}</url>
+</WebLink>

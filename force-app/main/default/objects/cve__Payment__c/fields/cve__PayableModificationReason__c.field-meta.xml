@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>cve__PayableModificationReason__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <label>Payable Modification Reason</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Financial Hardship</fullName>
+                <default>true</default>
+                <label>Financial Hardship</label>
+            </value>
+            <value>
+                <fullName>Ancillaries</fullName>
+                <default>false</default>
+                <label>Ancillaries</label>
+            </value>
+            <value>
+                <fullName>Negotiated Pay and Finalise</fullName>
+                <default>false</default>
+                <label>Negotiated Pay and Finalise</label>
+            </value>
+            <value>
+                <fullName>Agreed payment release date</fullName>
+                <default>false</default>
+                <label>Agreed payment release date</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

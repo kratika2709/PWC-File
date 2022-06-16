@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>cve__AddBenefit</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <linkType>url</linkType>
+    <masterLabel>Add Benefit</masterLabel>
+    <openType>replace</openType>
+    <protected>false</protected>
+    <url>{!IF($Site.Prefix == null, &apos;&apos;, URLFOR($Site.Prefix))}{! URLFOR(IF(ISNULL(cve__Claim__c.cve__PolicyId__c), &apos;/apex/cve__ClaimIntakeWizardPolicyStep&apos;, &apos;/apex/cve__ClaimIntakeWizardBenefitStep&apos;), null, [existingClaimId=cve__Claim__c.Id, retURL=&apos;/&apos; + cve__Claim__c.Id])}</url>
+</WebLink>

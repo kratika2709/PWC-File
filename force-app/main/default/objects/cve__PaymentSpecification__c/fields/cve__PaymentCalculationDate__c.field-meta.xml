@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>cve__PaymentCalculationDate__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field gets set by the PaymentCalculator and is used in conjunction with History Tracking to supply an audit history of the amount of times the Payment Calculation was used.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The date and time that the Payment Calculation was last run.</inlineHelpText>
+    <label>Payment Calculation Date</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>DateTime</type>
+</CustomField>

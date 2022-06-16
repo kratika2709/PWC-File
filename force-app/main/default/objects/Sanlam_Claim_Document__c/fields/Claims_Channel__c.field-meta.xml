@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Claims_Channel__c</fullName>
+    <externalId>false</externalId>
+    <label>Claims Channel</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Death</fullName>
+                <default>false</default>
+                <label>death</label>
+            </value>
+            <value>
+                <fullName>Living Benefits</fullName>
+                <default>false</default>
+                <label>Living Benefits</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

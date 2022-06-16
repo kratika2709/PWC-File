@@ -1,0 +1,14 @@
+<aura:component implements="flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId" access="global" >
+    <div style="margin-top: -16px;">
+        <!-- <lightning:recordViewForm recordId="{!v.recordId}" objectApiName="Sanlam_Required_Documents__c">
+            <lightning:layout>
+                <lightning:layoutItem size="6">
+                    <lightning:outputField fieldName="Benefit_Claim__c" class="slds-m-left_small"/>
+                </lightning:layoutItem>
+                <lightning:layoutItem size="6">
+                    <lightning:outputField fieldName="Document_ID__c" class="slds-m-left_small"/>
+                </lightning:layoutItem>
+            </lightning:layout>
+        </lightning:recordViewForm> -->
+    </div>
+</aura:component>

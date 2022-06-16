@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>cve__CauseOfDeath__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <label>Cause of Death</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>cve__MannerOfDeath__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>AIDS</fullName>
+                <default>false</default>
+                <label>AIDS</label>
+            </value>
+            <value>
+                <fullName>Alzheimer&apos;s</fullName>
+                <default>false</default>
+                <label>Alzheimer&apos;s</label>
+            </value>
+            <value>
+                <fullName>Cancer</fullName>
+                <default>false</default>
+                <label>Cancer</label>
+            </value>
+            <value>
+                <fullName>Cancer - Bladder</fullName>
+                <default>false</default>
+                <label>Cancer - Bladder</label>
+            </value>
+            <value>
+                <fullName>Cancer - Breast</fullName>
+                <default>false</default>
+                <label>Cancer - Breast</label>
+            </value>
+            <value>
+                <fullName>Cancer - Colon</fullName>
+                <default>false</default>
+                <label>Cancer - Colon</label>
+            </value>
+            <value>
+                <fullName>Cancer - Kidney</fullName>
+                <default>false</default>
+                <label>Cancer - Kidney</label>
+            </value>
+            <value>
+                <fullName>Cancer - Lung</fullName>
+                <default>false</default>
+                <label>Cancer - Lung</label>
+            </value>
+            <value>
+                <fullName>Cancer - Lymphoma</fullName>
+                <default>false</default>
+                <label>Cancer - Lymphoma</label>
+            </value>
+            <value>
+                <fullName>Cancer - Melanoma</fullName>
+                <default>false</default>
+                <label>Cancer - Melanoma</label>
+            </value>
+            <value>
+                <fullName>Cancer - Pancreatic</fullName>
+                <default>false</default>
+                <label>Cancer - Pancreatic</label>
+            </value>
+            <value>
+                <fullName>Cancer - Prostate</fullName>
+                <default>false</default>
+                <label>Cancer - Prostate</label>
+            </value>
+            <value>
+                <fullName>Cancer - Thyroid</fullName>
+                <default>false</default>
+                <label>Cancer - Thyroid</label>
+            </value>
+            <value>
+                <fullName>Catastrophic</fullName>
+                <default>false</default>
+                <label>Catastrophic</label>
+            </value>
+            <value>
+                <fullName>Cerebro-vascular Diseases</fullName>
+                <default>false</default>
+                <label>Cerebro-vascular Diseases</label>
+            </value>
+            <value>
+                <fullName>Chronic Liver</fullName>
+                <default>false</default>
+                <label>Chronic Liver</label>
+            </value>
+            <value>
+                <fullName>Chronic Lower Respiratory</fullName>
+                <default>false</default>
+                <label>Chronic Lower Respiratory</label>
+            </value>
+            <value>
+                <fullName>Crohn&apos;s Disease</fullName>
+                <default>false</default>
+                <label>Crohn&apos;s Disease</label>
+            </value>
+            <value>
+                <fullName>Dementia</fullName>
+                <default>false</default>
+                <label>Dementia</label>
+            </value>
+            <value>
+                <fullName>Diabetes Mellitus</fullName>
+                <default>false</default>
+                <label>Diabetes Mellitus</label>
+            </value>
+            <value>
+                <fullName>Drowning</fullName>
+                <default>false</default>
+                <label>Drowning</label>
+            </value>
+            <value>
+                <fullName>Fall</fullName>
+                <default>false</default>
+                <label>Fall</label>
+            </value>
+            <value>
+                <fullName>Fetal</fullName>
+                <default>false</default>
+                <label>Fetal</label>
+            </value>
+            <value>
+                <fullName>Firearm</fullName>
+                <default>false</default>
+                <label>Firearm</label>
+            </value>
+            <value>
+                <fullName>Fire or Explosion</fullName>
+                <default>false</default>
+                <label>Fire or Explosion</label>
+            </value>
+            <value>
+                <fullName>Heart Disease</fullName>
+                <default>false</default>
+                <label>Heart Disease</label>
+            </value>
+            <value>
+                <fullName>Homicide</fullName>
+                <default>false</default>
+                <label>Homicide</label>
+            </value>
+            <value>
+                <fullName>Homicide at Work</fullName>
+                <default>false</default>
+                <label>Homicide at Work</label>
+            </value>
+            <value>
+                <fullName>Influenza/Pneumonia</fullName>
+                <default>false</default>
+                <label>Influenza/Pneumonia</label>
+            </value>
+            <value>
+                <fullName>Kidney Disease</fullName>
+                <default>false</default>
+                <label>Kidney Disease</label>
+            </value>
+            <value>
+                <fullName>Natural Causes</fullName>
+                <default>false</default>
+                <label>Natural Causes</label>
+            </value>
+            <value>
+                <fullName>Organ Failure</fullName>
+                <default>false</default>
+                <label>Organ Failure</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Other Accident</fullName>
+                <default>false</default>
+                <label>Other Accident</label>
+            </value>
+            <value>
+                <fullName>Overdose</fullName>
+                <default>false</default>
+                <label>Overdose</label>
+            </value>
+            <value>
+                <fullName>Poisoning</fullName>
+                <default>false</default>
+                <label>Poisoning</label>
+            </value>
+            <value>
+                <fullName>Private Plane Accident</fullName>
+                <default>false</default>
+                <label>Private Plane Accident</label>
+            </value>
+            <value>
+                <fullName>Sepsis</fullName>
+                <default>false</default>
+                <label>Sepsis</label>
+            </value>
+            <value>
+                <fullName>Stroke</fullName>
+                <default>false</default>
+                <label>Stroke</label>
+            </value>
+            <value>
+                <fullName>Suicide</fullName>
+                <default>false</default>
+                <label>Suicide</label>
+            </value>
+            <value>
+                <fullName>Terrorism</fullName>
+                <default>false</default>
+                <label>Terrorism</label>
+            </value>
+            <value>
+                <fullName>Unknown</fullName>
+                <default>false</default>
+                <label>Unknown</label>
+            </value>
+            <value>
+                <fullName>Vehicular Accident</fullName>
+                <default>false</default>
+                <label>Vehicular Accident</label>
+            </value>
+            <value>
+                <fullName>Vehicular Accident-Driver of Car</fullName>
+                <default>false</default>
+                <label>Vehicular Accident-Driver of Car</label>
+            </value>
+            <value>
+                <fullName>Vehicular Accident-Passenger of Car</fullName>
+                <default>false</default>
+                <label>Vehicular Accident-Passenger of Car</label>
+            </value>
+            <value>
+                <fullName>War</fullName>
+                <default>false</default>
+                <label>War</label>
+            </value>
+            <value>
+                <fullName>Workplace Accident</fullName>
+                <default>false</default>
+                <label>Workplace Accident</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Natural</controllingFieldValue>
+            <valueName>AIDS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Natural</controllingFieldValue>
+            <valueName>Alzheimer&apos;s</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Natural</controllingFieldValue>
+            <valueName>Cancer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Natural</controllingFieldValue>
+            <valueName>Cancer - Bladder</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Natural</controllingFieldValue>
+            <valueName>Cancer - Breast</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Natural</controllingFieldValue>
+            <valueName>Cancer - Colon</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Natural</controllingFieldValue>
+            <valueName>Cancer - Kidney</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Natural</controllingFieldValue>
+            <valueName>Cancer - Lung</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Natural</controllingFieldValue>
+            <valueName>Cancer - Lymphoma</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Natural</controllingFieldValue>
+            <valueName>Cancer - Melanoma</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Natural</controllingFieldValue>
+            <valueName>Cancer - Pancreatic</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Natural</controllingFieldValue>
+            <valueName>Cancer - Prostate</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Natural</controllingFieldValue>
+            <valueName>Cancer - Thyroid</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Natural</controllingFieldValue>
+            <valueName>Cerebro-vascular Diseases</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Natural</controllingFieldValue>
+            <valueName>Chronic Liver</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Natural</controllingFieldValue>
+            <valueName>Chronic Lower Respiratory</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Natural</controllingFieldValue>
+            <valueName>Crohn&apos;s Disease</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Natural</controllingFieldValue>
+            <valueName>Dementia</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Natural</controllingFieldValue>
+            <valueName>Diabetes Mellitus</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Natural</controllingFieldValue>
+            <valueName>Fetal</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Natural</controllingFieldValue>
+            <valueName>Heart Disease</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Natural</controllingFieldValue>
+            <valueName>Influenza/Pneumonia</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Natural</controllingFieldValue>
+            <valueName>Kidney Disease</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Natural</controllingFieldValue>
+            <valueName>Natural Causes</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Natural</controllingFieldValue>
+            <valueName>Organ Failure</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Natural</controllingFieldValue>
+            <controllingFieldValue>Suicide</controllingFieldValue>
+            <controllingFieldValue>Accident</controllingFieldValue>
+            <controllingFieldValue>Homicide</controllingFieldValue>
+            <controllingFieldValue>Unknown/Undetermined</controllingFieldValue>
+            <controllingFieldValue>Under Investigation</controllingFieldValue>
+            <valueName>Other</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Natural</controllingFieldValue>
+            <valueName>Sepsis</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Natural</controllingFieldValue>
+            <valueName>Stroke</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Natural</controllingFieldValue>
+            <controllingFieldValue>Suicide</controllingFieldValue>
+            <controllingFieldValue>Homicide</controllingFieldValue>
+            <controllingFieldValue>Unknown/Undetermined</controllingFieldValue>
+            <valueName>Unknown</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Suicide</controllingFieldValue>
+            <controllingFieldValue>Accident</controllingFieldValue>
+            <controllingFieldValue>Homicide</controllingFieldValue>
+            <controllingFieldValue>Unknown/Undetermined</controllingFieldValue>
+            <controllingFieldValue>Under Investigation</controllingFieldValue>
+            <valueName>Catastrophic</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Suicide</controllingFieldValue>
+            <controllingFieldValue>Accident</controllingFieldValue>
+            <controllingFieldValue>Homicide</controllingFieldValue>
+            <controllingFieldValue>Unknown/Undetermined</controllingFieldValue>
+            <controllingFieldValue>Under Investigation</controllingFieldValue>
+            <valueName>Drowning</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Suicide</controllingFieldValue>
+            <controllingFieldValue>Accident</controllingFieldValue>
+            <controllingFieldValue>Homicide</controllingFieldValue>
+            <controllingFieldValue>Unknown/Undetermined</controllingFieldValue>
+            <controllingFieldValue>Under Investigation</controllingFieldValue>
+            <valueName>Fall</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Suicide</controllingFieldValue>
+            <controllingFieldValue>Accident</controllingFieldValue>
+            <controllingFieldValue>Homicide</controllingFieldValue>
+            <controllingFieldValue>Unknown/Undetermined</controllingFieldValue>
+            <controllingFieldValue>Under Investigation</controllingFieldValue>
+            <valueName>Firearm</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Suicide</controllingFieldValue>
+            <controllingFieldValue>Accident</controllingFieldValue>
+            <controllingFieldValue>Homicide</controllingFieldValue>
+            <controllingFieldValue>Unknown/Undetermined</controllingFieldValue>
+            <controllingFieldValue>Under Investigation</controllingFieldValue>
+            <valueName>Fire or Explosion</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Suicide</controllingFieldValue>
+            <controllingFieldValue>Unknown/Undetermined</controllingFieldValue>
+            <controllingFieldValue>Under Investigation</controllingFieldValue>
+            <valueName>Overdose</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Suicide</controllingFieldValue>
+            <valueName>Suicide</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Suicide</controllingFieldValue>
+            <controllingFieldValue>Accident</controllingFieldValue>
+            <controllingFieldValue>Homicide</controllingFieldValue>
+            <controllingFieldValue>Unknown/Undetermined</controllingFieldValue>
+            <controllingFieldValue>Under Investigation</controllingFieldValue>
+            <valueName>Vehicular Accident</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Suicide</controllingFieldValue>
+            <controllingFieldValue>Accident</controllingFieldValue>
+            <controllingFieldValue>Homicide</controllingFieldValue>
+            <controllingFieldValue>Unknown/Undetermined</controllingFieldValue>
+            <controllingFieldValue>Under Investigation</controllingFieldValue>
+            <valueName>Vehicular Accident-Driver of Car</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Suicide</controllingFieldValue>
+            <controllingFieldValue>Accident</controllingFieldValue>
+            <controllingFieldValue>Homicide</controllingFieldValue>
+            <controllingFieldValue>Unknown/Undetermined</controllingFieldValue>
+            <controllingFieldValue>Under Investigation</controllingFieldValue>
+            <valueName>Workplace Accident</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Accident</controllingFieldValue>
+            <valueName>Other Accident</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Accident</controllingFieldValue>
+            <controllingFieldValue>Unknown/Undetermined</controllingFieldValue>
+            <controllingFieldValue>Under Investigation</controllingFieldValue>
+            <valueName>Vehicular Accident-Passenger of Car</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Homicide</controllingFieldValue>
+            <valueName>Homicide</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Homicide</controllingFieldValue>
+            <valueName>Homicide at Work</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Homicide</controllingFieldValue>
+            <controllingFieldValue>Unknown/Undetermined</controllingFieldValue>
+            <controllingFieldValue>Under Investigation</controllingFieldValue>
+            <valueName>Poisoning</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Homicide</controllingFieldValue>
+            <controllingFieldValue>Unknown/Undetermined</controllingFieldValue>
+            <controllingFieldValue>Under Investigation</controllingFieldValue>
+            <valueName>Private Plane Accident</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Homicide</controllingFieldValue>
+            <valueName>Terrorism</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Homicide</controllingFieldValue>
+            <controllingFieldValue>Unknown/Undetermined</controllingFieldValue>
+            <valueName>War</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Revised_Date_of_Death__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>If this field has a value, then use this field in calculations. Used in exceptional cases to override Date of Death for BC Claim field.</inlineHelpText>
+    <label>Revised Date of Death</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

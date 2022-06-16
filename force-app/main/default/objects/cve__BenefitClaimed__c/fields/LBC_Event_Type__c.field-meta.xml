@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LBC_Event_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>LBC Event Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Legacy</fullName>
+                <default>false</default>
+                <label>Legacy</label>
+            </value>
+            <value>
+                <fullName>Matrix</fullName>
+                <default>false</default>
+                <label>Matrix</label>
+            </value>
+            <value>
+                <fullName>RA</fullName>
+                <default>false</default>
+                <label>RA</label>
+            </value>
+            <value>
+                <fullName>LBC - Claim (General)</fullName>
+                <default>false</default>
+                <label>LBC - Claim (General)</label>
+            </value>
+            <value>
+                <fullName>Namibia - Claim</fullName>
+                <default>false</default>
+                <label>Namibia - Claim</label>
+            </value>
+            <value>
+                <fullName>Indiefin</fullName>
+                <default>false</default>
+                <label>Indiefin</label>
+            </value>
+            <value>
+                <fullName>African Rainbow Life</fullName>
+                <default>false</default>
+                <label>African Rainbow Life</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

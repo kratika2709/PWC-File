@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>cve__StatusReasons__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <label>Status Reasons</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>--- Incomplete ---</fullName>
+                <default>false</default>
+                <label>--- Incomplete ---</label>
+            </value>
+            <value>
+                <fullName>Need Employer Statement</fullName>
+                <default>false</default>
+                <label>Need Employer Statement</label>
+            </value>
+            <value>
+                <fullName>Need Employee Statement</fullName>
+                <default>false</default>
+                <label>Need Employee Statement</label>
+            </value>
+            <value>
+                <fullName>Need Attending Physician Statement</fullName>
+                <default>false</default>
+                <label>Need Attending Physician Statement</label>
+            </value>
+            <value>
+                <fullName>--- Pending ---</fullName>
+                <default>false</default>
+                <label>--- Pending ---</label>
+            </value>
+            <value>
+                <fullName>Newly Assigned</fullName>
+                <default>false</default>
+                <label>Newly Assigned</label>
+            </value>
+            <value>
+                <fullName>Evaluating Received Data</fullName>
+                <default>false</default>
+                <label>Evaluating Received Data</label>
+            </value>
+            <value>
+                <fullName>Awaiting Medical</fullName>
+                <default>false</default>
+                <label>Awaiting Medical</label>
+            </value>
+            <value>
+                <fullName>Preexisting Condition Investigation</fullName>
+                <default>false</default>
+                <label>Preexisting Condition Investigation</label>
+            </value>
+            <value>
+                <fullName>Awaiting Vocational</fullName>
+                <default>false</default>
+                <label>Awaiting Vocational</label>
+            </value>
+            <value>
+                <fullName>Awaiting Financial</fullName>
+                <default>false</default>
+                <label>Awaiting Financial</label>
+            </value>
+            <value>
+                <fullName>Awaiting Other Information</fullName>
+                <default>false</default>
+                <label>Awaiting Other Information</label>
+            </value>
+            <value>
+                <fullName>Anticipatory Claim - Pending</fullName>
+                <default>false</default>
+                <label>Anticipatory Claim - Pending</label>
+            </value>
+            <value>
+                <fullName>--- Approved ---</fullName>
+                <default>false</default>
+                <label>--- Approved ---</label>
+            </value>
+            <value>
+                <fullName>Insufficient Medical Documentation</fullName>
+                <default>false</default>
+                <label>Insufficient Medical Documentation</label>
+            </value>
+            <value>
+                <fullName>Insufficient Vocational Documentation</fullName>
+                <default>false</default>
+                <label>Insufficient Vocational Documentation</label>
+            </value>
+            <value>
+                <fullName>Insufficient Financial Documentation</fullName>
+                <default>false</default>
+                <label>Insufficient Financial Documentation</label>
+            </value>
+            <value>
+                <fullName>Anticipated Medical Recovery Date</fullName>
+                <default>false</default>
+                <label>Anticipated Medical Recovery Date</label>
+            </value>
+            <value>
+                <fullName>Released By Treating Physician</fullName>
+                <default>false</default>
+                <label>Released By Treating Physician</label>
+            </value>
+            <value>
+                <fullName>Return to Work</fullName>
+                <default>false</default>
+                <label>Return to Work</label>
+            </value>
+            <value>
+                <fullName>Contractual Limitation Applied</fullName>
+                <default>false</default>
+                <label>Contractual Limitation Applied</label>
+            </value>
+            <value>
+                <fullName>Return to Work Responsibility Limitation</fullName>
+                <default>false</default>
+                <label>Return to Work Responsibility Limitation</label>
+            </value>
+            <value>
+                <fullName>Death of Member</fullName>
+                <default>false</default>
+                <label>Death of Member</label>
+            </value>
+            <value>
+                <fullName>Settlement - Approved</fullName>
+                <default>false</default>
+                <label>Settlement - Approved</label>
+            </value>
+            <value>
+                <fullName>Legal Settlement - Approved</fullName>
+                <default>false</default>
+                <label>Legal Settlement - Approved</label>
+            </value>
+            <value>
+                <fullName>Contested Claim - Approved</fullName>
+                <default>false</default>
+                <label>Contested Claim - Approved</label>
+            </value>
+            <value>
+                <fullName>Work Related Condition - Approved</fullName>
+                <default>false</default>
+                <label>Work Related Condition - Approved</label>
+            </value>
+            <value>
+                <fullName>Claimant Expects to Return to Work</fullName>
+                <default>false</default>
+                <label>Claimant Expects to Return to Work</label>
+            </value>
+            <value>
+                <fullName>--- Denied ---</fullName>
+                <default>false</default>
+                <label>--- Denied ---</label>
+            </value>
+            <value>
+                <fullName>Proof of Loss Not Provided</fullName>
+                <default>false</default>
+                <label>Proof of Loss Not Provided</label>
+            </value>
+            <value>
+                <fullName>Not Insured Under Group Policy</fullName>
+                <default>false</default>
+                <label>Not Insured Under Group Policy</label>
+            </value>
+            <value>
+                <fullName>Insufficient Medical</fullName>
+                <default>false</default>
+                <label>Insufficient Medical</label>
+            </value>
+            <value>
+                <fullName>Insufficient Vocational</fullName>
+                <default>false</default>
+                <label>Insufficient Vocational</label>
+            </value>
+            <value>
+                <fullName>Insufficient Financial</fullName>
+                <default>false</default>
+                <label>Insufficient Financial</label>
+            </value>
+            <value>
+                <fullName>Earnings Exceed % Allowed</fullName>
+                <default>false</default>
+                <label>Earnings Exceed % Allowed</label>
+            </value>
+            <value>
+                <fullName>Preexisting Condition Exclusion Applied</fullName>
+                <default>false</default>
+                <label>Preexisting Condition Exclusion Applied</label>
+            </value>
+            <value>
+                <fullName>Incorrect Claim Setup</fullName>
+                <default>false</default>
+                <label>Incorrect Claim Setup</label>
+            </value>
+            <value>
+                <fullName>Contested Claim</fullName>
+                <default>false</default>
+                <label>Contested Claim</label>
+            </value>
+            <value>
+                <fullName>Medical Recovery During BWP</fullName>
+                <default>false</default>
+                <label>Medical Recovery During BWP</label>
+            </value>
+            <value>
+                <fullName>Death During BWP</fullName>
+                <default>false</default>
+                <label>Death During BWP</label>
+            </value>
+            <value>
+                <fullName>Anticipated Medical Recovery During BWP</fullName>
+                <default>false</default>
+                <label>Anticipated Medical Recovery During BWP</label>
+            </value>
+            <value>
+                <fullName>Released By Physician During BWP</fullName>
+                <default>false</default>
+                <label>Released By Physician During BWP</label>
+            </value>
+            <value>
+                <fullName>Return To Work During BWP</fullName>
+                <default>false</default>
+                <label>Return To Work During BWP</label>
+            </value>
+            <value>
+                <fullName>Contractual Exclusion</fullName>
+                <default>false</default>
+                <label>Contractual Exclusion</label>
+            </value>
+            <value>
+                <fullName>Anticipatory Claim - Denied</fullName>
+                <default>false</default>
+                <label>Anticipatory Claim - Denied</label>
+            </value>
+            <value>
+                <fullName>Settlement - Denied</fullName>
+                <default>false</default>
+                <label>Settlement - Denied</label>
+            </value>
+            <value>
+                <fullName>Legal Settlement - Denied</fullName>
+                <default>false</default>
+                <label>Legal Settlement - Denied</label>
+            </value>
+            <value>
+                <fullName>Contested Claim - Denied</fullName>
+                <default>false</default>
+                <label>Contested Claim - Denied</label>
+            </value>
+            <value>
+                <fullName>Work Related Condition - Denied</fullName>
+                <default>false</default>
+                <label>Work Related Condition - Denied</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>5</visibleLines>
+</CustomField>

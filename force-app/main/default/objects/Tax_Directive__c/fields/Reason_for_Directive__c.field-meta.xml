@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reason_for_Directive__c</fullName>
+    <externalId>false</externalId>
+    <label>Reason for Directive</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Death Before Retirement</fullName>
+                <default>false</default>
+                <label>Death Before Retirement</label>
+            </value>
+            <value>
+                <fullName>Retirement</fullName>
+                <default>false</default>
+                <label>Retirement</label>
+            </value>
+            <value>
+                <fullName>Retirement due to ill health</fullName>
+                <default>false</default>
+                <label>Retirement due to ill health</label>
+            </value>
+            <value>
+                <fullName>Provident Fund – Deemed to be Retirement</fullName>
+                <default>false</default>
+                <label>Provident Fund – Deemed to be Retirement</label>
+            </value>
+            <value>
+                <fullName>Transfer on Retirement</fullName>
+                <default>false</default>
+                <label>Transfer on Retirement</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

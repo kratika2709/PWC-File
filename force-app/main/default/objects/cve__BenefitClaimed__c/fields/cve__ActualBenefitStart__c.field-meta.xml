@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>cve__ActualBenefitStart__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The actual Benefit Start Date, which is the Adjusted Benefit Start if used, the Benefit Start otherwise.</description>
+    <externalId>false</externalId>
+    <formula>IF(ISBLANK(cve__AdjustedBenefitStart__c), cve__BenefitStart__c, cve__AdjustedBenefitStart__c)</formula>
+    <inlineHelpText>The actual Benefit Start Date, which is the Adjusted Benefit Start if used, the Benefit Start otherwise.</inlineHelpText>
+    <label>Actual Benefit Start</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

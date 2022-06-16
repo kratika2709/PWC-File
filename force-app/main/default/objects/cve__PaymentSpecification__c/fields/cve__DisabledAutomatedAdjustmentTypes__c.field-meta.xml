@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>cve__DisabledAutomatedAdjustmentTypes__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <inlineHelpText>These Adjustment types are not updated by automation allowing manually edited Adjustments to be used instead; edit on the Payment Specification</inlineHelpText>
+    <label>Disabled Automated Adjustments</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Age at Date of Disability (Pre-Tax)</fullName>
+                <default>false</default>
+                <label>Age at Date of Disability (Pre-Tax)</label>
+            </value>
+            <value>
+                <fullName>Air Bag Benefit</fullName>
+                <default>false</default>
+                <label>Air Bag Benefit</label>
+            </value>
+            <value>
+                <fullName>Annuity P... Interest - Simple (Pre-Tax)</fullName>
+                <default>false</default>
+                <label>Annuity P... Interest - Simple (Pre-Tax)</label>
+            </value>
+            <value>
+                <fullName>Cause of Claim (Pre-Tax)</fullName>
+                <default>false</default>
+                <label>Cause of Claim (Pre-Tax)</label>
+            </value>
+            <value>
+                <fullName>Death Claim Interest (Pre-Tax)</fullName>
+                <default>false</default>
+                <label>Death Claim Interest (Pre-Tax)</label>
+            </value>
+            <value>
+                <fullName>Dividend - Accumulated (Pre-Tax)</fullName>
+                <default>false</default>
+                <label>Dividend - Accumulated (Pre-Tax)</label>
+            </value>
+            <value>
+                <fullName>Dividend - Paid Up (Pre-Tax)</fullName>
+                <default>false</default>
+                <label>Dividend - Paid Up (Pre-Tax)</label>
+            </value>
+            <value>
+                <fullName>Dividends (Pre-Tax)</fullName>
+                <default>false</default>
+                <label>Dividends (Pre-Tax)</label>
+            </value>
+            <value>
+                <fullName>Dividend - Term (Pre-Tax)</fullName>
+                <default>false</default>
+                <label>Dividend - Term (Pre-Tax)</label>
+            </value>
+            <value>
+                <fullName>Federal Income Tax</fullName>
+                <default>false</default>
+                <label>Federal Income Tax</label>
+            </value>
+            <value>
+                <fullName>FICA Tax</fullName>
+                <default>false</default>
+                <label>FICA Tax</label>
+            </value>
+            <value>
+                <fullName>Length of Servic... Disability (Pre-Tax)</fullName>
+                <default>false</default>
+                <label>Length of Servic... Disability (Pre-Tax)</label>
+            </value>
+            <value>
+                <fullName>Life Proc... Interest - Simple (Pre-Tax)</fullName>
+                <default>false</default>
+                <label>Life Proc... Interest - Simple (Pre-Tax)</label>
+            </value>
+            <value>
+                <fullName>Loan (Pre-Tax)</fullName>
+                <default>false</default>
+                <label>Loan (Pre-Tax)</label>
+            </value>
+            <value>
+                <fullName>Maximum Benefit Adjustment (Pre-Tax)</fullName>
+                <default>false</default>
+                <label>Maximum Benefit Adjustment (Pre-Tax)</label>
+            </value>
+            <value>
+                <fullName>Medicare Tax</fullName>
+                <default>false</default>
+                <label>Medicare Tax</label>
+            </value>
+            <value>
+                <fullName>Minimum Benefit Adjustment (Pre-Tax)</fullName>
+                <default>false</default>
+                <label>Minimum Benefit Adjustment (Pre-Tax)</label>
+            </value>
+            <value>
+                <fullName>Premium Refund (Pre-Tax)</fullName>
+                <default>false</default>
+                <label>Premium Refund (Pre-Tax)</label>
+            </value>
+            <value>
+                <fullName>Return to Work Earnings (Pre-Tax)</fullName>
+                <default>false</default>
+                <label>Return to Work Earnings (Pre-Tax)</label>
+            </value>
+            <value>
+                <fullName>Seat Belt Benefit</fullName>
+                <default>false</default>
+                <label>Seat Belt Benefit</label>
+            </value>
+            <value>
+                <fullName>State Income Tax</fullName>
+                <default>false</default>
+                <label>State Income Tax</label>
+            </value>
+            <value>
+                <fullName>Statutory Disability Benefit</fullName>
+                <default>false</default>
+                <label>Statutory Disability Benefit</label>
+            </value>
+            <value>
+                <fullName>Temporary Recovery (Pre-Tax)</fullName>
+                <default>false</default>
+                <label>Temporary Recovery (Pre-Tax)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>10</visibleLines>
+</CustomField>

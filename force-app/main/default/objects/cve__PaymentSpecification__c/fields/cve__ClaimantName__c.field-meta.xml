@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>cve__ClaimantName__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <formula>cve__Claim__r.cve__ClaimantInsured__r.cve__FirstNameCopy__c + &apos; &apos; + cve__Claim__r.cve__ClaimantInsured__r.cve__LastNameCopy__c</formula>
+    <label>Claimant/Insured</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

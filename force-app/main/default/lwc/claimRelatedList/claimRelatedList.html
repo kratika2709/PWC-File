@@ -1,0 +1,146 @@
+<template>
+	<lightning-card>
+     <div class="slds-page-header border_around">
+			<div class="slds-page-header__row">
+				<lightning-layout class="slds-size_12-of-12">
+					<lightning-layout-item>
+						<div class="slds-page-header__name-title">
+							<lightning-icon icon-name="standard:approval" size="small" class="my-icon"></lightning-icon>
+						</div>
+					</lightning-layout-item>
+					<lightning-layout-item size="9">
+						<div class="slds-page-header__name-title slds-m-left_small">
+							<h3>
+								<strong class="slds-text-heading_small slds-truncate" title="Communication History">
+									Communication
+									History
+									({size})</strong>
+							</h3>
+						</div>
+					</lightning-layout-item>
+					<lightning-layout-item size="3">
+						<div class="slds-float_right slds-m-right_large">
+							<button class="slds-button slds-button_neutral" onclick={openRecordModal}>New</button>
+							<button class="slds-button slds-button_neutral">Retrieve</button>
+						</div>
+					</lightning-layout-item>
+				</lightning-layout>
+			</div>
+		</div>
+
+		<div class="slds-card__body">
+			<lightning-datatable key-field="id" data={communicationRecord} columns={columns}  onrowaction={viewRecord} >
+			</lightning-datatable>
+		</div>
+		<footer class="slds-card__footer">
+			<a class="slds-card__footer-action" href="#">View All
+				<span class="slds-assistive-text">Communication History</span>
+			</a>
+		</footer>
+
+    
+		<template if:true={isModalOpen}>
+        <!-- Modal/Popup Box LWC starts here -->
+        <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true" aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+            <div class="slds-modal__container">
+               
+				
+				
+				<!-- Modal/Popup Box LWC header here -->
+                <header class="slds-modal__header">
+                    <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse" title="Close" onclick={closeModal}>
+                        <lightning-icon icon-name="utility:close"
+                            alternative-text="close"
+                            variant="inverse"
+                            size="small" ></lightning-icon>
+                        <span class="slds-assistive-text">Close</span>
+                    </button>
+                    <h2 id="modal-heading-01" class="slds-text-heading_medium slds-hyphenate">Message/Contact Details</h2>
+                </header>
+
+                <!-- Modal/Popup Box LWC body starts here -->
+                <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+					<lightning-formatted-rich-text value={ranger}>
+					</lightning-formatted-rich-text>
+
+					<lightning-formatted-url value="https://salesforce.com" tooltip="Use https://domain-name" 
+				   label="Visit salesforce.com" target="_blank" ></lightning-formatted-url>
+                </div>
+
+                <!-- Modal/Popup Box LWC footer starts here -->
+                <footer class="slds-modal__footer">
+                    <button class="slds-button slds-button_neutral" onclick={closeModal} title="Cancel">Cancel</button>
+                </footer>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+    </template> 
+
+	</lightning-card>
+    
+	<template if:true={openModal}>  
+		<div class="slds-modal slds-fade-in-open slds-backdrop">  
+		  <div class="slds-modal__container">  
+			<!---HEADER Section-->  
+			<div class="slds-modal__header">  
+			  <lightning-button-icon icon-name="utility:close" alternative-text="Close this window" size="large"  
+				variant="bare-inverse" onclick={closeRecordModal} class="slds-modal__close">  
+			  </lightning-button-icon>  
+			  <h2 id="modal-heading-02" class="slds-text-heading_medium slds-hyphenate">Communication History Create Record</h2>
+			</div>  
+			<!---Body Section-->  
+			<div class="slds-modal__content slds-p-around_medium">  
+			<div class="slds-modal__content slds-p-around_medium" id="modal-content-id-2">
+				<lightning-record-edit-form columns="2" object-api-name="Sanlam_Communication_History__c">
+					<lightning-messages></lightning-messages>
+					<div class="slds-grid slds-wrap">
+						<div class="slds-col slds-size_1-of-2">
+							<lightning-input-field field-name="Name" onchange={nameChangedHandler} required="true"></lightning-input-field>
+						</div>
+						<div class="slds-col slds-size_1-of-2">
+							<lightning-input-field field-name="Activity_Type__c" onchange={activityChangedHandler}></lightning-input-field>
+						</div>
+						<div class="slds-col slds-size_1-of-2">
+							<lightning-input-field field-name="Contact_Category__c" onchange={ccChangedHandler}></lightning-input-field>
+						</div>
+						<div class="slds-col slds-size_1-of-2">
+							<lightning-input-field field-name="Description__c" onchange={descChangedHandler}></lightning-input-field>
+						</div>
+						<div class="slds-col slds-size_1-of-2">
+							<lightning-input-field field-name="Communication_ID__c" onchange={commChangedHandler}></lightning-input-field>
+						</div>
+						<div class="slds-col slds-size_1-of-2">
+							<lightning-input-field field-name="Content_Manager_Id__c" onchange={cmChangedHandler}></lightning-input-field>
+						</div>
+					  </div>
+					<lightning-input-field field-name="Message_Contact_Details__c" onchange={msgChangedHandler}></lightning-input-field>
+					<lightning-input-field field-name="Claim_Number__c" onchange={claimChangedHandler}></lightning-input-field>
+					<div class="slds-grid slds-wrap">
+						<div class="slds-col slds-size_1-of-2">
+							<lightning-input-field field-name="Policy_Number__c" onchange={policyChangedHandler}></lightning-input-field>
+						</div>
+						<div class="slds-col slds-size_1-of-2">
+							<lightning-input-field field-name="Benefit_Claimed_Relationship__c" onchange={benefitChangedHandler}></lightning-input-field>
+						</div>
+						<div class="slds-col slds-size_1-of-2">
+							<lightning-input-field field-name="Member_Name__c" onchange={memberChangedHandler}></lightning-input-field>
+						</div>
+						<div class="slds-col slds-size_1-of-2">
+							<lightning-input-field field-name="Person__c" onchange={personChangedHandler}></lightning-input-field>
+						</div>
+					  </div>
+				</lightning-record-edit-form>
+			</div>
+			</div>  
+			<!---Footer Section-->  
+			<div class="slds-modal__footer">  
+				<lightning-button variant="brand" label="Save"  onclick={createCommunicationHistory} class="slds-m-left_x-small"></lightning-button>
+			  <lightning-button variant="brand" label="close" class="slds-m-left_x-small" onclick={closeRecordModal}>  
+			  </lightning-button>  
+			</div>  
+		  </div>  
+		</div>  
+	  </template>  
+	
+
+</template>

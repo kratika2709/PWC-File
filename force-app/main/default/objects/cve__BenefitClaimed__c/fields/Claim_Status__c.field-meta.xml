@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Claim_Status__c</fullName>
+    <externalId>false</externalId>
+    <label>Claim Status</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Claim Received</fullName>
+                <default>false</default>
+                <label>Claim Received</label>
+            </value>
+            <value>
+                <fullName>Claim Registered</fullName>
+                <default>false</default>
+                <label>Claim Registered</label>
+            </value>
+            <value>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+                <label>In Progress</label>
+            </value>
+            <value>
+                <fullName>Claim Deferred</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Claim Deferred</label>
+            </value>
+            <value>
+                <fullName>Closed</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Closed</label>
+            </value>
+            <value>
+                <fullName>No Claim - DC</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>No Claim - DC</label>
+            </value>
+            <value>
+                <fullName>No Claim - LBC</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>No Claim - LBC</label>
+            </value>
+            <value>
+                <fullName>Paid</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Paid</label>
+            </value>
+            <value>
+                <fullName>Partially Paid</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Partially Paid</label>
+            </value>
+            <value>
+                <fullName>Repudiated - DC</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Repudiated - DC</label>
+            </value>
+            <value>
+                <fullName>Repudiated - LBC</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Repudiated - LBC</label>
+            </value>
+            <value>
+                <fullName>Reversed</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Reversed</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Claim_Stage__c</fullName>
+    <externalId>false</externalId>
+    <label>Claim Stage</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Claim Preparation</fullName>
+                <default>false</default>
+                <label>Claim Preparation</label>
+            </value>
+            <value>
+                <fullName>Documents Outstanding</fullName>
+                <default>false</default>
+                <label>Documents Outstanding</label>
+            </value>
+            <value>
+                <fullName>Claim Evaluation</fullName>
+                <default>false</default>
+                <label>Claim Evaluation</label>
+            </value>
+            <value>
+                <fullName>Contract Validation</fullName>
+                <default>false</default>
+                <label>Contract Validation</label>
+            </value>
+            <value>
+                <fullName>Medical Evaluation</fullName>
+                <default>false</default>
+                <label>Medical Evaluation</label>
+            </value>
+            <value>
+                <fullName>Claim Decision</fullName>
+                <default>false</default>
+                <label>Claim Decision</label>
+            </value>
+            <value>
+                <fullName>Additional Information Required</fullName>
+                <default>false</default>
+                <label>Additional Information Required</label>
+            </value>
+            <value>
+                <fullName>Correspondence Preparation</fullName>
+                <default>false</default>
+                <label>Correspondence Preparation</label>
+            </value>
+            <value>
+                <fullName>Payment and Correspondence Preparation</fullName>
+                <default>false</default>
+                <label>Payment and Correspondence Preparation</label>
+            </value>
+            <value>
+                <fullName>Payment Calculation</fullName>
+                <default>false</default>
+                <label>Payment Calculation</label>
+            </value>
+            <value>
+                <fullName>PDD Authorization Pending</fullName>
+                <default>false</default>
+                <label>PDD Authorization Pending</label>
+            </value>
+            <value>
+                <fullName>Payment Pending Approval</fullName>
+                <default>false</default>
+                <label>Payment Pending Approval</label>
+            </value>
+            <value>
+                <fullName>Payment in Process</fullName>
+                <default>false</default>
+                <label>Payment in Process</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

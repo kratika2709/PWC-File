@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Claim_Status_Reason__c</fullName>
+    <externalId>false</externalId>
+    <label>Claim Status Reason</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Claim_Status__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Claim Assessment</fullName>
+                <default>false</default>
+                <label>Claim Assessment</label>
+            </value>
+            <value>
+                <fullName>Information requested: Claim Assessment</fullName>
+                <default>false</default>
+                <label>Information requested: Claim Assessment</label>
+            </value>
+            <value>
+                <fullName>Information requested: Contract Validation</fullName>
+                <default>false</default>
+                <label>Information requested: Contract Validation</label>
+            </value>
+            <value>
+                <fullName>Claim assessment referral: Internal Department</fullName>
+                <default>false</default>
+                <label>Claim assessment referral: Internal Department</label>
+            </value>
+            <value>
+                <fullName>Information received</fullName>
+                <default>false</default>
+                <label>Information received</label>
+            </value>
+            <value>
+                <fullName>Adjustment of claim</fullName>
+                <default>false</default>
+                <label>Adjustment of claim</label>
+            </value>
+            <value>
+                <fullName>Reversal of finalised claim</fullName>
+                <default>false</default>
+                <label>Reversal of finalised claim</label>
+            </value>
+            <value>
+                <fullName>Deferred</fullName>
+                <default>false</default>
+                <label>Deferred</label>
+            </value>
+            <value>
+                <fullName>Registered</fullName>
+                <default>false</default>
+                <label>Registered</label>
+            </value>
+            <value>
+                <fullName>Received</fullName>
+                <default>false</default>
+                <label>Received</label>
+            </value>
+            <value>
+                <fullName>Accidental death benefit.  Natural cause of death</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Accidental death benefit.  Natural cause of death</label>
+            </value>
+            <value>
+                <fullName>Benefit definition not met</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Benefit definition not met</label>
+            </value>
+            <value>
+                <fullName>Benefit doesn&apos;t exist</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Benefit doesn&apos;t exist</label>
+            </value>
+            <value>
+                <fullName>Conditions not covered by benefits</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Conditions not covered by benefits</label>
+            </value>
+            <value>
+                <fullName>Contractual Stipulations</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Contractual Stipulations</label>
+            </value>
+            <value>
+                <fullName>Cover not in force</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Cover not in force</label>
+            </value>
+            <value>
+                <fullName>DC: Unclaimed benefit</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>DC: Unclaimed benefit</label>
+            </value>
+            <value>
+                <fullName>Date of death before contractual date</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Date of death before contractual date</label>
+            </value>
+            <value>
+                <fullName>Declined as the waiting period has not yet expired</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Declined as the waiting period has not yet expired</label>
+            </value>
+            <value>
+                <fullName>Duplicate</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Duplicate</label>
+            </value>
+            <value>
+                <fullName>Ex-gratia</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Ex-gratia</label>
+            </value>
+            <value>
+                <fullName>Ex-gratia Decision</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Ex-gratia Decision</label>
+            </value>
+            <value>
+                <fullName>Fraud</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Fraud</label>
+            </value>
+            <value>
+                <fullName>General exclusions</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>General exclusions</label>
+            </value>
+            <value>
+                <fullName>Misrepresentation</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Misrepresentation</label>
+            </value>
+            <value>
+                <fullName>No benefit payable</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>No benefit payable</label>
+            </value>
+            <value>
+                <fullName>Non Disclosure with Loading</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Non Disclosure with Loading</label>
+            </value>
+            <value>
+                <fullName>Non Disclosure without Loading</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Non Disclosure without Loading</label>
+            </value>
+            <value>
+                <fullName>Non-disclosure/Deterioration in risk</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Non-disclosure/Deterioration in risk</label>
+            </value>
+            <value>
+                <fullName>Non-disclosure/Deterioration in risk/Misrepresentation</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Non-disclosure/Deterioration in risk/Misrepresentation</label>
+            </value>
+            <value>
+                <fullName>Not in force</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Not in force</label>
+            </value>
+            <value>
+                <fullName>Outstanding requirements</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Outstanding requirements</label>
+            </value>
+            <value>
+                <fullName>Paid</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Paid</label>
+            </value>
+            <value>
+                <fullName>Permanent claim</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Permanent claim</label>
+            </value>
+            <value>
+                <fullName>Policy lapsed</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Policy lapsed</label>
+            </value>
+            <value>
+                <fullName>Premium position not in order</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Premium position not in order</label>
+            </value>
+            <value>
+                <fullName>Premium position not in order/cover lapsed</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Premium position not in order/cover lapsed</label>
+            </value>
+            <value>
+                <fullName>Refer to finalise</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Refer to finalise</label>
+            </value>
+            <value>
+                <fullName>Refer to other department</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Refer to other department</label>
+            </value>
+            <value>
+                <fullName>Reversed (Contra)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Reversed (Contra)</label>
+            </value>
+            <value>
+                <fullName>Specific underwriting exclusions</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Specific underwriting exclusions</label>
+            </value>
+            <value>
+                <fullName>Suicide Exclusion</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Suicide Exclusion</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Claim Received</controllingFieldValue>
+            <valueName>Received</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Claim Registered</controllingFieldValue>
+            <valueName>Registered</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>In Progress</controllingFieldValue>
+            <valueName>Claim Assessment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>In Progress</controllingFieldValue>
+            <valueName>Information requested: Claim Assessment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>In Progress</controllingFieldValue>
+            <valueName>Information requested: Contract Validation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>In Progress</controllingFieldValue>
+            <valueName>Claim assessment referral: Internal Department</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>In Progress</controllingFieldValue>
+            <valueName>Information received</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>In Progress</controllingFieldValue>
+            <valueName>Adjustment of claim</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>In Progress</controllingFieldValue>
+            <valueName>Reversal of finalised claim</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tax_Directive__c</fullName>
+    <externalId>false</externalId>
+    <label>Tax Directive</label>
+    <referenceTo>Tax_Directive__c</referenceTo>
+    <relationshipLabel>Tax Directives Relationship to Person</relationshipLabel>
+    <relationshipName>Tax_Directives_Relationship_to_Person</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

@@ -1,0 +1,23 @@
+.my-icon {
+
+    --sds-c-icon-color-background: rgb(255, 94, 0);
+}
+
+.my.Style{
+    margin-right: 80%;
+}
+
+.boxClass { 
+    background-color:white; 
+    margin-top: 280px;
+    margin-left: auto; 
+ }
+
+.border_around{
+    border: 1px solid #dcd0d0;
+}
+
+.slds-modal__container {
+    max-width: 70rem !important;
+    width: 60% !important;
+}

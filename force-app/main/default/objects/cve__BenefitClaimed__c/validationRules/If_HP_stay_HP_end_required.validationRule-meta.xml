@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>If_HP_stay_HP_end_required</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(ISBLANK(cve__HospitalEndDate__c),OR(ISPICKVAL( Hospital_Status__c, &quot;Less than 24h (HP&lt;24h)&quot;),
+ISPICKVAL( Hospital_Status__c, &quot;More than 24h (HP&gt;24h)&quot;)
+))</errorConditionFormula>
+    <errorDisplayField>cve__HospitalEndDate__c</errorDisplayField>
+    <errorMessage>If HP stay then HP Stay End Date is Required</errorMessage>
+</ValidationRule>

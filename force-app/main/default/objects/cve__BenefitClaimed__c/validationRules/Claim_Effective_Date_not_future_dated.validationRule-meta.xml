@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Claim_Effective_Date_not_future_dated</fullName>
+    <active>true</active>
+    <errorConditionFormula>Claim_Effective_Date__c &gt;  Today ()</errorConditionFormula>
+    <errorDisplayField>Claim_Effective_Date__c</errorDisplayField>
+    <errorMessage>Claim Effective Date cannot be in the future</errorMessage>
+</ValidationRule>

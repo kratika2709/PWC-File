@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>cve__YearsInForceAtDateOfDisability__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <formula>ROUND
+(
+    YEAR(cve__DateOfDisability__c) - YEAR(cve__EffectiveDateOfCoverage__c)
+    +
+    (((cve__DateOfDisability__c - DATE(YEAR(cve__DateOfDisability__c), 1, 1)) - (cve__EffectiveDateOfCoverage__c - DATE(YEAR(cve__EffectiveDateOfCoverage__c), 1, 1))) / 365),
+    2
+)</formula>
+    <label>Years in Force at Date of Disability</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

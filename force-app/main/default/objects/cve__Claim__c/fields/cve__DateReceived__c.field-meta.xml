@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>cve__DateReceived__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <inlineHelpText>Value is from Benefit Claimed</inlineHelpText>
+    <label>Date Received</label>
+    <summarizedField>cve__BenefitClaimed__c.cve__DateReceived__c</summarizedField>
+    <summaryForeignKey>cve__BenefitClaimed__c.cve__Claim__c</summaryForeignKey>
+    <summaryOperation>min</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

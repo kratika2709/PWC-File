@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>No_HP_fields_not_editable</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(OR(ISPICKVAL( Hospital_Status__c , &apos;No hospitalisation (No HP)&apos;),ISPICKVAL( Hospital_Status__c , &apos; &apos;)), NOT( ISBLANK( cve__HospitalStartDate__c )))</errorConditionFormula>
+    <errorDisplayField>cve__HospitalStartDate__c</errorDisplayField>
+    <errorMessage>HP Start Date not required when there is no HP stay</errorMessage>
+</ValidationRule>

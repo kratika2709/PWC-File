@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>cve__LongTermDisability</fullName>
+    <active>true</active>
+    <label>Long Term Disability</label>
+    <picklistValues>
+        <picklist>cve__AmountPeriod__c</picklist>
+        <values>
+            <fullName>Bi-Weekly</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Daily</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Half-Yearly</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lump Sum</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Monthly</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quarterly</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Semi-Monthly</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Weekly</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yearly</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>cve__DisabledAutomatedAdjustmentTypes__c</picklist>
+        <values>
+            <fullName>Age at Date of Disability %28Pre-Tax%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Air Bag Benefit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Annuity P%2E%2E%2E Interest - Simple %28Pre-Tax%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cause of Claim %28Pre-Tax%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Death Claim Interest %28Pre-Tax%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dividend - Accumulated %28Pre-Tax%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dividend - Paid Up %28Pre-Tax%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dividend - Term %28Pre-Tax%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dividends %28Pre-Tax%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FICA Tax</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Federal Income Tax</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Length of Servic%2E%2E%2E Disability %28Pre-Tax%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Life Proc%2E%2E%2E Interest - Simple %28Pre-Tax%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Loan %28Pre-Tax%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Maximum Benefit Adjustment %28Pre-Tax%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medicare Tax</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Minimum Benefit Adjustment %28Pre-Tax%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Premium Refund %28Pre-Tax%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Return to Work Earnings %28Pre-Tax%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Seat Belt Benefit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>State Income Tax</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Temporary Recovery %28Pre-Tax%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>cve__ExpenseType__c</picklist>
+        <values>
+            <fullName>Autopsy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Death Certificate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Functional Capacity Evaluation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Independent Medical Examination</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Labor Market Survey</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medical Records</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Police Reports</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Special Investigation Charges</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Toxicology Report</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transportation Charges</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vendors</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vocational Rehabilitation</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>cve__Indicator__c</picklist>
+        <values>
+            <fullName>External</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Internal</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>cve__PaymentOption__c</picklist>
+        <values>
+            <fullName>Accelerated Payment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lump Sum Payment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Payment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retained Asset Payment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Settlement - Fixed Installment Amount</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Settlement - Fixed Installment Period</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Settlement - Interest Only</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Settlement - Joint and Survivor Income</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Settlement - Life Income</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Settlement - Life Income with Period Certain</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Settlement - Life Income with Refund</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>To be Determined</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>cve__PaymentType__c</picklist>
+        <values>
+            <fullName>Benefit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Expense</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>cve__Period__c</picklist>
+        <values>
+            <fullName>Bi-Weekly</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lump Sum</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Monthly</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Semi-Monthly</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Weekly</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

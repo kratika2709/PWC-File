@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>No_HP_no_HP_Name</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(OR(ISPICKVAL( Hospital_Status__c , &apos;No hospitalisation (No HP)&apos;),ISPICKVAL( Hospital_Status__c , &apos; &apos;)), NOT( ISBLANK( cve__HospitalName__c )))</errorConditionFormula>
+    <errorDisplayField>cve__HospitalName__c</errorDisplayField>
+    <errorMessage>No HP no HP Name Needed</errorMessage>
+</ValidationRule>

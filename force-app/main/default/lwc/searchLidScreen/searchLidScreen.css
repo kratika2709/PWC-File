@@ -1,0 +1,14 @@
+.section{
+    background: gainsboro;
+    border-radius: 6px;
+}
+
+.position{
+    position: relative;
+    bottom: 2.5px;
+
+}
+
+.spinnerMediumHeight{
+    position: fixed;
+}

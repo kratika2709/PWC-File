@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>cve__RequiredFields</fullName>
+    <active>false</active>
+    <errorConditionFormula>cve__InvoiceNumber__c == null</errorConditionFormula>
+    <errorMessage>Please ensure these fields are populated: Invoice Number</errorMessage>
+</ValidationRule>

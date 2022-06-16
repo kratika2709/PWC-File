@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>cve__PaymentOption__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <label>Payment Option</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Accelerated Payment</fullName>
+                <default>false</default>
+                <label>Accelerated Payment</label>
+            </value>
+            <value>
+                <fullName>Lump Sum Payment</fullName>
+                <default>false</default>
+                <label>Lump Sum Payment</label>
+            </value>
+            <value>
+                <fullName>Retained Asset Payment</fullName>
+                <default>false</default>
+                <label>Retained Asset Payment</label>
+            </value>
+            <value>
+                <fullName>Settlement - Interest Only</fullName>
+                <default>false</default>
+                <label>Settlement - Interest Only</label>
+            </value>
+            <value>
+                <fullName>Settlement - Fixed Installment Period</fullName>
+                <default>false</default>
+                <label>Settlement - Fixed Installment Period</label>
+            </value>
+            <value>
+                <fullName>Settlement - Fixed Installment Amount</fullName>
+                <default>false</default>
+                <label>Settlement - Fixed Installment Amount</label>
+            </value>
+            <value>
+                <fullName>Settlement - Life Income</fullName>
+                <default>false</default>
+                <label>Settlement - Life Income</label>
+            </value>
+            <value>
+                <fullName>Settlement - Life Income with Period Certain</fullName>
+                <default>false</default>
+                <label>Settlement - Life Income with Period Certain</label>
+            </value>
+            <value>
+                <fullName>Settlement - Life Income with Refund</fullName>
+                <default>false</default>
+                <label>Settlement - Life Income with Refund</label>
+            </value>
+            <value>
+                <fullName>Settlement - Joint and Survivor Income</fullName>
+                <default>false</default>
+                <label>Settlement - Joint and Survivor Income</label>
+            </value>
+            <value>
+                <fullName>Retained Assets</fullName>
+                <default>false</default>
+                <label>Retained Assets</label>
+            </value>
+            <value>
+                <fullName>Installments for a Guaranteed Period</fullName>
+                <default>false</default>
+                <label>Installments for a Guaranteed Period</label>
+            </value>
+            <value>
+                <fullName>Installments for Life</fullName>
+                <default>false</default>
+                <label>Installments for Life</label>
+            </value>
+            <value>
+                <fullName>Installments for Life with a Guaranteed Period</fullName>
+                <default>false</default>
+                <label>Installments for Life with a Guaranteed Period</label>
+            </value>
+            <value>
+                <fullName>Benefit Deposited with Interest</fullName>
+                <default>false</default>
+                <label>Benefit Deposited with Interest</label>
+            </value>
+            <value>
+                <fullName>Installments of a Selected Amount</fullName>
+                <default>false</default>
+                <label>Installments of a Selected Amount</label>
+            </value>
+            <value>
+                <fullName>Joint and Survivor Annuity</fullName>
+                <default>false</default>
+                <label>Joint and Survivor Annuity</label>
+            </value>
+            <value>
+                <fullName>Joint and 2/3 Survivor Annuity</fullName>
+                <default>false</default>
+                <label>Joint and 2/3 Survivor Annuity</label>
+            </value>
+            <value>
+                <fullName>No Payment</fullName>
+                <default>false</default>
+                <label>No Payment</label>
+            </value>
+            <value>
+                <fullName>To be Determined</fullName>
+                <default>false</default>
+                <label>To be Determined</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

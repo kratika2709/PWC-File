@@ -1,0 +1,1746 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>cve__IncomeProtection</fullName>
+    <active>true</active>
+    <description>Provides monthly payments to a claimant incapacitated and hence unable to work due to illness or accident. IPI policies were formerly called PHI (Permanent Health Insurance) policies.</description>
+    <label>Income Protection</label>
+    <picklistValues>
+        <picklist>Claim_Stage__c</picklist>
+        <values>
+            <fullName>Additional Information Required</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Claim Decision</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Claim Evaluation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Claim Preparation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contract Validation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Correspondence Preparation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Documents Outstanding</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medical Evaluation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PDD Authorization Pending</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Payment Calculation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Payment Pending Approval</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Payment and Correspondence Preparation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Payment in Process</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Claim_Status_Reason__c</picklist>
+        <values>
+            <fullName>Adjustment of claim</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Claim Assessment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Claim assessment referral%3A%C2%A0Internal Department</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Deferred</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Information received</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Information requested%3A%C2%A0Claim Assessment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Information requested%3A%C2%A0Contract Validation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Received</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Registered</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reversal of finalised claim</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Claim_Status__c</picklist>
+        <values>
+            <fullName>Claim Received</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Claim Registered</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Progress</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>DC_Event_Type__c</picklist>
+        <values>
+            <fullName>48 Hour Matrix Claim</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fund Claim</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Matrix Claim</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non Fund Claim</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non Fund Life Annuities</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>One Medical Plan Claim</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Proof of Life%3A 48 Hour Matrix</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Proof of Life%3A Fund</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Proof of Life%3A Matrix</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Proof of Life%3A Non Fund%C2%A0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Proof of Life%3A One Medical Plan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Proof of Life%3A%C2%A0Non Fund Life Annuities</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Terminally Ill Claim</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Hospital_Status__c</picklist>
+        <values>
+            <fullName>Less than 24h %28HP%3C24h%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>More than 24h %28HP%3E24h%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No hospitalisation %28No HP%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>LBC_Event_Type_Detail__c</picklist>
+        <values>
+            <fullName>ARL Claims</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ARL Complaint</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Accident Benefits %3A Legacy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Accident Benefits %3A Matrix</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Accident Income Benefits %3A Matrix</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Accidental Disability</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Child Benefit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Child Cover</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Complaint %3A Legacy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Complaint %3A Matrix</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Complaint %3A RA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Disability Benefits %3A Legacy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Disability Benefits %3A Matrix</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Doctor Account Payment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dread Disease %3A Matrix</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Enquiry from Other Department</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Event Type Detail</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Functional Impairment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>General Claim Enquiry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>General Claim Enquiry%3A Sickness</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Get Update on Outstanding Requirements</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ill Health %3A Epsilon</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ill Health %3A Legacy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Impairment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Income Protector %3A Child Protector</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Income Protector %3A Impairment Income</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Income Protector %3A Legacy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Income Protector %3A Matrix</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Income Protector %3A Post-Retirement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Income Protector %3A Pre-Retirement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Income Protector %3A Spouse Protector</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Indiefin Claims</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Indiefin Complaint</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LBC Change Client Details</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LBC Recon</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Loss of Income</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Namibia Claims</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Plan Number</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Physical Impairment %3A Legacy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Physical Impairment %3A Matrix</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prosthetic Booster</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retrenchment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Send Copy of Correspondence</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Send Forms</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Severe Illness Income</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Severe Illness Lump Sum</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sickness Benefit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sickness Benefit%3A Child Protector</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sickness Benefit%3A Hospital Protector</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sickness Benefit%3A Impairment Income</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sickness Benefit%3A Spouse Protector</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Temporary Disability</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Temporary Incapacity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trauma %3A Legacy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WOP %3A Legacy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WOP %3A Matrix</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>LBC_Event_Type__c</picklist>
+        <values>
+            <fullName>African Rainbow Life</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Indiefin</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LBC - Claim %28General%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Legacy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Matrix</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Namibia - Claim</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RA</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Reinsurance_Status__c</picklist>
+        <values>
+            <fullName>Not Reinsured</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Refer internal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reinsured with Multiple Reinsurers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reinsured with Single Reinsurer</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Required_Documents_Received__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>cve__BenefitAmountPeriod__c</picklist>
+        <values>
+            <fullName>Bi-Weekly</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Daily</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Half-Yearly</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Monthly</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quarterly</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Semi-Monthly</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Weekly</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yearly</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>cve__CauseOfAccident__c</picklist>
+        <values>
+            <fullName>Catastrophic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Drowning</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fall</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fire or Explosion</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Firearm</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other Accident</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vehicular Accident</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vehicular Accident - Driver of Car</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vehicular Accident - Passenger of Car</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Workplace Accident</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>cve__CauseOfDeath__c</picklist>
+        <values>
+            <fullName>AIDS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Alzheimer%27s</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cancer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cancer - Bladder</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cancer - Breast</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cancer - Colon</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cancer - Kidney</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cancer - Lung</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cancer - Lymphoma</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cancer - Melanoma</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cancer - Pancreatic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cancer - Prostate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cancer - Thyroid</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Catastrophic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cerebro-vascular Diseases</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chronic Liver</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chronic Lower Respiratory</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Crohn%27s Disease</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dementia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Diabetes Mellitus</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Drowning</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fall</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fetal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fire or Explosion</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Firearm</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Heart Disease</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Homicide</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Homicide at Work</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Influenza%2FPneumonia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kidney Disease</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Natural Causes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Organ Failure</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other Accident</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Overdose</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Poisoning</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Private Plane Accident</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sepsis</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Stroke</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Suicide</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Terrorism</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unknown</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vehicular Accident</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vehicular Accident-Driver of Car</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vehicular Accident-Passenger of Car</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>War</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Workplace Accident</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>cve__Cause__c</picklist>
+        <values>
+            <fullName>Accident</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Illness</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retrenchment</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>cve__CognitiveImpairment__c</picklist>
+        <values>
+            <fullName>Mild</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Moderate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Severe</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>cve__InsuredRelationshipToPolicyholder__c</picklist>
+        <values>
+            <fullName>Child</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Domestic Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Parent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Same Person</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Spouse</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>cve__LifeChangeEventType__c</picklist>
+        <values>
+            <fullName>Adoption</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Birth of Child</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Death of Dependent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Death of Spouse</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Divorce</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Employment Change</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ineligibility of Dependent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Legal Separation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Marriage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>cve__LimitationType__c</picklist>
+        <values>
+            <fullName>Drug and Alcohol Abuse</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mental Nervous</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Subjective</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>cve__MannerOfDeath__c</picklist>
+        <values>
+            <fullName>Accident</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Homicide</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Natural</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Suicide</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Under Investigation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unknown%2FUndetermined</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>cve__MaximumLifeExpectancyUnits__c</picklist>
+        <values>
+            <fullName>Days</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Months</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Weeks</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Years</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>cve__MedicalCodeType__c</picklist>
+        <values>
+            <fullName>CPT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ICD10</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>ICD9</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>cve__MinimumLifeExpectancyUnits__c</picklist>
+        <values>
+            <fullName>Days</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Months</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Weeks</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Years</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>cve__PaymentPeriod__c</picklist>
+        <values>
+            <fullName>Bi-Weekly</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fortnightly</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Monthly</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Semi-Monthly</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Weekly</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>cve__PremiumPeriod__c</picklist>
+        <values>
+            <fullName>Bi-Weekly</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Monthly</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Semi-Monthly</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Weekly</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>cve__ResidentState__c</picklist>
+        <values>
+            <fullName>AB-ALBERTA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AK-ALASKA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AL-ALABAMA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AR-ARKANSAS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AS-AMERICAN SAMOA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AZ-ARIZONA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BC-BRITISH COLUMBIA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CA-CALIFORNIA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CO-COLORADO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CT-CONNECTICUT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CZ-CANAL ZONE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DC-DISTRICT OF COLUMBIA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DE-DELAWARE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FL-FLORIDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FM-FEDERATED STATES OF MICRONESIA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GA-GEORGIA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GU-GUAM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HI-HAWAII</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HK-HONG KONG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IA-IOWA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ID-IDAHO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IL-ILLINOIS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IN-INDIANA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>KO-KOREA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>KS-KANSAS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>KY-KENTUCKY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LA-LOUISIANA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LB-LABRADOR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MA-MASSACHUSETTS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MB-MANITOBA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MD-MARYLAND</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ME-MAINE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MH-MARSHALL ISLANDS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MI-MICHIGAN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MN-MINNESOTA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MO-MISSOURI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MP-NORTHERN MARIANA ISLANDS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MS-MISSISSIPPI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MT-MONTANA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NB-NEW BRUNSWICK</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NC-NORTH CAROLINA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ND-NORTH DAKOTA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NE-NEBRASKA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NF-NEWFOUNDLAND</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NH-NEW HAMPSHIRE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NJ-NEW JERSEY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NM-NEW MEXICO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NS-NOVA SCOTIA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NT-NORTHWEST TERRITORIES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NV-NEVADA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NY-NEW YORK</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OH-OHIO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OK-OKLAHOMA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ON-ONTARIO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OR-OREGON</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PA-PENNSYLVANIA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PE-PRINCE EDWARD ISLAND</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PQ-QUEBEC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PR-PUERTO RICO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PW-PALAU</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RI-RHODE ISLAND</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SA-SAUDI ARABIA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SC-SOUTH CAROLINA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SD-SOUTH DAKOTA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SK-SASKATCHEWAN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TN-TENNESSEE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TX-TEXAS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UT-UTAH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VA-VIRGINIA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VI-VIRGIN ISLANDS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VT-VERMONT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WA-WASHINGTON</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WI-WISCONSIN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WV-WEST VIRGINIA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WY-WYOMING</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>YK-YUKON TERRITORIES</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>cve__Stage__c</picklist>
+        <values>
+            <fullName>Decision</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Eligibility</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Financial</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>cve__StatusForApproval__c</picklist>
+        <values>
+            <fullName>Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Denied</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>cve__StatusReason__c</picklist>
+        <values>
+            <fullName>ADL Loss</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DC Unclaimed benefit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Death</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Deferred</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Disabled Any Occupation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Disabled Own Occupation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Duplicate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Information Requested Not Received</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Marked Up in Error</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Maximum Duration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Claim - DC - Accidental death benefit%2E  Natural cause of death</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Claim - DC - Date of death before contractual date</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Claim - LBC - Benefit doesn%27t exist</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Claim - LBC - Conditions not covered by benefits</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No benefit payable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Disabled Any Occupation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Disabled Own Occupation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Eligible</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not in force</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Paid</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Paid - Ex-gratia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Paid - Permanent claim</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partially paid - Contractual Stipulations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partially paid - Ex-gratia Decision</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partially paid - Non Disclosure with Loading</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partially paid - Non Disclosure without Loading</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partially paid - Outstanding requirements</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pre-existing Condition</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RTW Gainful Occupation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RTW Own Occupation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Refer to finalise</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Refer to other department</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Repudiated - Benefit definition not met</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Repudiated - Cover not in force</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Repudiated - Declined as the waiting period has not yet expired</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Repudiated - Fraud</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Repudiated - General exclusions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Repudiated - Misrepresentation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Repudiated - Non-disclosure%2FDeterioration in risk%2FMisrepresentation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Repudiated - Policy lapsed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Repudiated - Premium position not in order</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Repudiated - Specific underwriting exclusions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Repudiated - Suicide Exclusion</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reversal of finalised claim</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Settlement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Withdrawn</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>cve__StatusReasons__c</picklist>
+        <values>
+            <fullName>--- Approved ---</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>--- Denied ---</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>--- Incomplete ---</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>--- Pending ---</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Anticipated Medical Recovery Date</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Anticipated Medical Recovery During BWP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Anticipatory Claim - Denied</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Anticipatory Claim - Pending</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Awaiting Financial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Awaiting Medical</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Awaiting Other Information</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Awaiting Vocational</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Claimant Expects to Return to Work</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contested Claim</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contested Claim - Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contested Claim - Denied</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contractual Exclusion</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contractual Limitation Applied</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Death During BWP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Death of Member</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Earnings Exceed %25 Allowed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Evaluating Received Data</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Incorrect Claim Setup</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Insufficient Financial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Insufficient Financial Documentation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Insufficient Medical</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Insufficient Medical Documentation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Insufficient Vocational</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Insufficient Vocational Documentation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Legal Settlement - Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Legal Settlement - Denied</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medical Recovery During BWP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Need Attending Physician Statement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Need Employee Statement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Need Employer Statement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Newly Assigned</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Insured Under Group Policy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Preexisting Condition Exclusion Applied</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Preexisting Condition Investigation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Proof of Loss Not Provided</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Released By Physician During BWP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Released By Treating Physician</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Return To Work During BWP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Return to Work</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Return to Work Responsibility Limitation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Settlement - Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Settlement - Denied</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Work Related Condition - Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Work Related Condition - Denied</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>cve__Status__c</picklist>
+        <values>
+            <fullName>Appeal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Approval Rejected</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Closed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Denied</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Submitted for Approval</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Suspended</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

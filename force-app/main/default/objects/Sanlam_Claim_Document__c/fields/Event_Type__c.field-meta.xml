@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Event_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Event Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>New Claim</fullName>
+                <default>false</default>
+                <label>New Claim</label>
+            </value>
+            <value>
+                <fullName>Existing Claim</fullName>
+                <default>false</default>
+                <label>Existing Claim</label>
+            </value>
+            <value>
+                <fullName>Terminally ill</fullName>
+                <default>false</default>
+                <label>Terminally ill</label>
+            </value>
+            <value>
+                <fullName>Task</fullName>
+                <default>false</default>
+                <label>Task</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

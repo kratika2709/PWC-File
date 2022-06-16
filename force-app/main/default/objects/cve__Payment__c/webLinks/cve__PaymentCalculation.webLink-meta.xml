@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>cve__PaymentCalculation</fullName>
+    <availability>online</availability>
+    <displayType>link</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <linkType>url</linkType>
+    <masterLabel>Payment Calculation</masterLabel>
+    <openType>replace</openType>
+    <protected>false</protected>
+    <url>{! URLFOR( &quot;/apex/cve__PaymentCalculation&quot;, null, [id=cve__Payment__c.cve__PaymentSpecificationId__c] ) }</url>
+</WebLink>

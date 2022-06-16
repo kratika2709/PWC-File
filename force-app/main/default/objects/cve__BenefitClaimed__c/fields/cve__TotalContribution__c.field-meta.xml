@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>cve__TotalContribution__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <formula>IF(
+    AND(
+        ISBLANK(cve__EmployeeContributionPreTax__c),
+        ISBLANK(cve__EmployeeContributionPostTax__c),
+        ISBLANK(cve__EmployerContributionPreTax__c),
+        ISBLANK(cve__EmployerContributionPostTax__c)
+    ),
+NULL, 
+    NULLVALUE(cve__EmployeeContributionPreTax__c, 0)
+    + NULLVALUE(cve__EmployeeContributionPostTax__c, 0)
+    + NULLVALUE(cve__EmployerContributionPreTax__c, 0)
+    + NULLVALUE(cve__EmployerContributionPostTax__c, 0)
+)</formula>
+    <label>Total Contribution</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>cve__WaivedOverpayment</fullName>
+    <active>true</active>
+    <label>Waived Overpayment</label>
+    <picklistValues>
+        <picklist>cve__BankAccountType__c</picklist>
+        <values>
+            <fullName>Checking</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Savings</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>cve__ExpenseType__c</picklist>
+        <values>
+            <fullName>External Consultants</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>External Legal Fees</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Factual Investigations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Forensic Accounting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Independent Medical Exams</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rehabilitation Expenses</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Surveillance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Third Party Legal Expenses</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>cve__Explanation__c</picklist>
+        <values>
+            <fullName>Overpayment Correction</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Underpayment Correction</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>cve__PayableModificationReason__c</picklist>
+        <values>
+            <fullName>Agreed payment release date</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ancillaries</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Financial Hardship</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Negotiated Pay and Finalise</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>cve__PaymentMethod__c</picklist>
+        <values>
+            <fullName>Check</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EFT</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>cve__Status__c</picklist>
+        <values>
+            <fullName>Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Consolidated</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Processed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rejected</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Released</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Stop</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Submitted for Approval</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Void</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>cve__Type__c</picklist>
+        <values>
+            <fullName>Expense</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lump Sum</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

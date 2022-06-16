@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Claim_is_not_eligible</fullName>
+    <active>true</active>
+    <description>Claim is ineligible and can&apos;t be approved until claim is reviewed for missing information and then rerun eligibility rules</description>
+    <errorConditionFormula>AND(
+NOT(ISBLANK( TEXT(cve__Status__c ))),
+NOT(ISBLANK( TEXT(cve__LatestJournal__r.cve__EligibilityStatus__c ))),
+ISPICKVAL(cve__Status__c, &apos;Approved&apos;),
+ISPICKVAL(cve__LatestJournal__r.cve__EligibilityStatus__c, &apos;Ineligible&apos;)
+)</errorConditionFormula>
+    <errorDisplayField>cve__Status__c</errorDisplayField>
+    <errorMessage>Claim is ineligible and cannot be approved at this time.  Please review claim for missing information and rerun eligibility rules</errorMessage>
+</ValidationRule>

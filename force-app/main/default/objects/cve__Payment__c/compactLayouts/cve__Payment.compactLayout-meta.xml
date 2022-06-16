@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>cve__Payment</fullName>
+    <fields>Name</fields>
+    <fields>cve__Claim__c</fields>
+    <fields>cve__PayeeName__c</fields>
+    <fields>cve__Account__c</fields>
+    <fields>RecordTypeId</fields>
+    <fields>cve__PaymentMethod__c</fields>
+    <fields>cve__PaymentSpecification__c</fields>
+    <fields>cve__UnallocatedPayment__c</fields>
+    <fields>cve__ExpenseType__c</fields>
+    <fields>cve__Contact__c</fields>
+    <label>Payment</label>
+</CompactLayout>

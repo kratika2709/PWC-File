@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>cve__ClaimFeedItems</fullName>
+    <availability>online</availability>
+    <displayType>link</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <linkType>url</linkType>
+    <masterLabel>Claim Feed Items</masterLabel>
+    <openType>replace</openType>
+    <protected>false</protected>
+    <url>{!IF($Site.Prefix == null, &apos;&apos;, URLFOR($Site.Prefix))}{! URLFOR( &quot;/apex/cve__ClaimFeedItems&quot; ) }&amp;id={!cve__Claim__c.Id}&amp;title=Claim+Feed+Items&amp;photos=true&amp;columns=Created+By,Type,Body,File,Link,Created</url>
+</WebLink>

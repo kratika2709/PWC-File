@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>cve__TotalPremiumPaid__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <formula>IF(
+    AND(
+        ISBLANK(cve__EmployeePremiumPaidPreTax__c),
+        ISBLANK(cve__EmployeePremiumPaidPostTax__c),
+        ISBLANK(cve__EmployerPremiumPaidPreTax__c),
+        ISBLANK(cve__EmployerPremiumPaidPostTax__c)
+    ),
+NULL, 
+    NULLVALUE(cve__EmployeePremiumPaidPreTax__c, 0)
+    + NULLVALUE(cve__EmployeePremiumPaidPostTax__c, 0)
+    + NULLVALUE(cve__EmployerPremiumPaidPreTax__c, 0)
+    + NULLVALUE(cve__EmployerPremiumPaidPostTax__c, 0)
+)</formula>
+    <label>Total Premium Paid</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

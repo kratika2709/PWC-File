@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>cve__MonthsValueRange</fullName>
+    <active>true</active>
+    <errorConditionFormula>cve__MonthsOfServiceAtDod__c &lt; 0 || cve__MonthsOfServiceAtDod__c &gt;= 12</errorConditionFormula>
+    <errorDisplayField>cve__MonthsOfServiceAtDod__c</errorDisplayField>
+    <errorMessage>Enter a value between 0 and 11</errorMessage>
+</ValidationRule>
